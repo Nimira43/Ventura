@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { FaUser, FaSignInAlt, FaSignOutAlt, FaBuilding } from 'react-icons/fa'
 
 const Header = () => {
   return ( 
@@ -38,22 +39,22 @@ const Header = () => {
                 href="login.html"
                 className="mr-3 text-[#333] hover:text-[#2947be]"
               >
-                <i className="fa fa-sign-in"></i> Login
+                <FaSignInAlt className='inline mr-1'/> Login
               </Link>
               <Link
                 href="register.html"
                 className="mr-3 text-[#333] hover:text-[#2947be]"
               >
-                <i className="fa fa-user"></i> Register
+                <FaUser className='inline mr-1'/> Register
               </Link>
               <Link href="my-rooms.html">
-                <i className="fa fa-building"></i> My Rooms
+                <FaBuilding className='inline mr-1'/> My Rooms
               </Link>
               <Link
                 href="login.html"
                 className="mx-3 text-[#333] hover:text-[#2947be]"
               >
-                <i className="fa fa-sign-out"></i> Sign Out
+                <FaSignOutAlt className='inline mr-1'/> Sign Out
               </Link>
             </div>
           </div>

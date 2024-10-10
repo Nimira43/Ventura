@@ -1,9 +1,7 @@
-import React from 'react'
-
-export default function page() {
+export default function Home() {
   return (
-    <div>
+    <>
       <h1>Ventura Venues</h1>
-    </div>
+    </>
   )
 }

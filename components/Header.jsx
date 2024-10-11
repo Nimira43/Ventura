@@ -14,19 +14,19 @@ const Header = () => {
               <div className="ml-10 flex items-baseline space-x-4">
                 <Link
                   href="/"
-                  className="rounded-md px-3 py-2 text-sm font-medium text-[#333] hover:bg-[#2947be] hover:text-[#f5f5dc]"
+                  className="rounded-md px-3 py-2 text-sm font-medium text-[#333] hover:bg-[#111] hover:text-[#f5f5dc]"
                 >
                   Rooms
                 </Link>
                 <Link
                   href="/bookings.html"
-                  className="rounded-md px-3 py-2 text-sm font-medium text-[#333] hover:bg-[#2947be] hover:text-[#f5f5dc]"
+                  className="rounded-md px-3 py-2 text-sm font-medium text-[#333] hover:bg-[#111] hover:text-[#f5f5dc]"
                 >
                   Bookings
                 </Link>
                 <Link
                   href="/add-room.html"
-                  className="rounded-md px-3 py-2 text-sm font-medium text-[#333] hover:bg-[#2947be] hover:text-[#f5f5dc]"
+                  className="rounded-md px-3 py-2 text-sm font-medium text-[#333] hover:bg-[#111] hover:text-[#f5f5dc]"
                 >
                   Add Room
                 </Link>
@@ -37,13 +37,13 @@ const Header = () => {
             <div className="ml-4 flex items-center md:ml-6">
               <Link
                 href="login.html"
-                className="mr-3 text-[#333] hover:text-[#2947be]"
+                className="mr-3 text-[#333] hover:text-[#f5f5dc]"
               >
                 <FaSignInAlt className='inline mr-1'/> Login
               </Link>
               <Link
                 href="register.html"
-                className="mr-3 text-[#333] hover:text-[#2947be]"
+                className="mr-3 text-[#333] hover:text-[#f5f5dc]"
               >
                 <FaUser className='inline mr-1'/> Register
               </Link>
@@ -52,7 +52,7 @@ const Header = () => {
               </Link>
               <Link
                 href="login.html"
-                className="mx-3 text-[#333] hover:text-[#2947be]"
+                className="mx-3 text-[#333] hover:text-[#f5f5dc]"
               >
                 <FaSignOutAlt className='inline mr-1'/> Sign Out
               </Link>
@@ -65,19 +65,19 @@ const Header = () => {
         <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
           <Link
             href="/"
-            className="block rounded-md px-3 py-2 text-base font-medium text-[#333] hover:bg-[#2947be] hover:text-[#f5f5dc]"
+            className="block rounded-md px-3 py-2 text-base font-medium text-[#333] hover:bg-[#111] hover:text-[#f5f5dc]"
           >
             Rooms
           </Link>
           <Link
             href="/bookings.html"
-            className="block rounded-md px-3 py-2 text-base font-medium text-[#333] hover:bg-[#2947be] hover:text-[#f5f5dc]"
+            className="block rounded-md px-3 py-2 text-base font-medium text-[#333] hover:bg-[#111] hover:text-[#f5f5dc]"
           >
             Bookings
           </Link>
           <Link
             href="/add-room.html"
-            className="block rounded-md px-3 py-2 text-base font-medium text-[#333] hover:bg-[#2947be] hover:text-[#f5f5dc]"
+            className="block rounded-md px-3 py-2 text-base font-medium text-[#333] hover:bg-[#111] hover:text-[#f5f5dc]"
           >
             Add Room
           </Link>

@@ -11,7 +11,7 @@
     "amenities": "Projector, Whiteboard, Video Conferencing, Wi-Fi, Sound System",
     "availability": "9 AM - 5 PM",
     "price_per_hour": 150,
-    "image": "room-1.jpg"
+    "image": "room-5.jpg"
   },
   {
     "$id": "2",
@@ -67,6 +67,6 @@
     "amenities": "Conference Phone, Television, Wi-Fi",
     "availability": "7 AM - 7 PM",
     "price_per_hour": 460,
-    "image": "room-5.jpg"
+    "image": "room-1.jpg"
   }
 ]

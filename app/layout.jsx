@@ -2,6 +2,7 @@ import { Poppins } from 'next/font/google'
 import Header from '@/components/Header'
 import '@/assets/styles/globals.css'
 import Footer from '@/components/Footer'
+import RoomCard from '@/components/RoomCard'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -9,16 +10,17 @@ const poppins = Poppins({
 })
 
 export const metadata = {
-  title: "Ventura Venues",
-  description: "Booking app using Next, Appwrite and Tailwind",
+  title: 'Ventura Venues',
+  description: 'Booking app using Next, Appwrite and Tailwind',
 }
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body className={poppins.className}>
         <Header />
         <main className='mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8'>
+          <RoomCard />
           {children}
         </main> 
         <Footer />       

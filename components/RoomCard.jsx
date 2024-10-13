@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import RoomImage from '@/images/rooms/room-1.jpg'
 
 const RoomCard = ({ room }) => {
   return ( 
@@ -9,7 +8,9 @@ const RoomCard = ({ room }) => {
     >
       <div className='flex flex-col sm:flex-row sm:space-x-4'>
         <Image
-          src={RoomImage}
+          src={`/images/rooms/${room.image}`}
+          width={400}
+          height={100}
           alt='Grand Conference Hall'
           className='w-full sm:w-32 sm:h-32 mb-3 sm:mb-0 object-cover rounded-lg'
         />

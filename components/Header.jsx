@@ -8,7 +8,7 @@ const Header = () => {
         <div className='flex h-16 items-center justify-between'>
           <div className='flex items-center'>
             <Link href='/'>
-              <h1 className='h-12 w-12 p-3'>VV</h1>
+              <h1 className='h-12 w-12 p-3 font-bold text-lg'>VV</h1>
             </Link>
             <div className='hidden md:block'>
               <div className='ml-10 flex items-baseline space-x-4'>

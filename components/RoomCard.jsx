@@ -4,7 +4,7 @@ import Link from 'next/link'
 const RoomCard = ({ room }) => {
   return ( 
     <div
-      class='bg-[#f5f5dc] shadow rounded-lg p-4 mt-4 flex flex-col sm:flex-row justify-between items-start sm:items-center'
+      class='bg-[#fff] shadow rounded-lg p-4 mt-4 flex flex-col sm:flex-row justify-between items-start sm:items-center'
     >
       <div className='flex flex-col sm:flex-row sm:space-x-4'>
         <Image

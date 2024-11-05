@@ -9,7 +9,7 @@
     "location": "The Rushmore Center, 3rd Floor",
     "address": "555 California St, San Francisco, CA 94104",
     "amenities": "Projector, Whiteboard, Video Conferencing, Wi-Fi, Sound System",
-    "availability": "9 AM - 5 PM",
+    "availability": "09:00-17:00",
     "price_per_hour": 150,
     "image": "room-5.jpg"
   },
@@ -23,7 +23,7 @@
     "location": "Denver Hotel, 2nd Floor",
     "address": "100 Park Ave, New York, NY 10017",
     "amenities": "Conference Phone, Whiteboard, Wi-Fi",
-    "availability": "8 AM - 6 PM",
+    "availability": "08:0-18:00",
     "price_per_hour": 100,
     "image": "room-2.jpg"
   },
@@ -37,7 +37,7 @@
     "location": "Logan Towers, 1st Floor",
     "address": "1600 Amphitheatre Parkway, Mountain View, CA 94043",
     "amenities": "Whiteboard, Television, Wi-Fi",
-    "availability": "10 AM - 4 PM",
+    "availability": "10:00-16:00",
     "price_per_hour": 80,
     "image": "room-3.jpg"
   },
@@ -51,7 +51,7 @@
     "location": "Cannon House, 1st Floor",
     "address": "18 The Priory Queensway, Birmingham, B4 6BS",
     "amenities": "Projector, Computers, Wi-Fi",
-    "availability": "9 AM - 6 PM",
+    "availability": "09:00-1800",
     "price_per_hour": 120,
     "image": "room-4.jpg"
   },
@@ -65,7 +65,7 @@
     "location": "The Savoy, 4th Floor",
     "address": "Strand, Covent Gardens, London WC2R 0EZ",
     "amenities": "Conference Phone, Television, Wi-Fi",
-    "availability": "7 AM - 7 PM",
+    "availability": "07:00-18:00",
     "price_per_hour": 460,
     "image": "room-1.jpg"
   }

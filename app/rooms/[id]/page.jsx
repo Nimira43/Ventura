@@ -12,54 +12,54 @@ const RoomPage = ({ params }) => {
   return (
     <>
       <Heading title={ room.name } />
-      <div class="bg-[#fff] shadow rounded-lg p-6">
+      <div className="bg-[#fff] shadow rounded-lg p-6">
         <a
           href="/rooms.html"
-          class="flex items-center text-[#333] hover:text-[#111] mb-4"
+          className="flex items-center text-[#333] hover:text-[#111] mb-4"
         >
-          <i class="fa fa-chevron-left"></i>
-          <span class="ml-2">Back to Rooms</span>
+          <i className="fa fa-chevron-left"></i>
+          <span className="ml-2">Back to Rooms</span>
         </a>
 
-        <div class="flex flex-col sm:flex-row sm:space-x-6">
+        <div className="flex flex-col sm:flex-row sm:space-x-6">
           <img
             src="images/rooms/room-1.jpg"
             alt="Grand Conference Hall"
-            class="w-full sm:w-1/3 h-64 object-cover rounded-lg"
+            className="w-full sm:w-1/3 h-64 object-cover rounded-lg"
           />
 
-          <div class="mt-4 sm:mt-0 sm:flex-1">
-            <p class="text-gray-600 mb-4">
+          <div className="mt-4 sm:mt-0 sm:flex-1">
+            <p className="text-gray-600 mb-4">
               Spacious conference hall perfect for large meetings and events.
               Equipped with modern amenities and comfortable seating.
             </p>
 
-            <ul class="space-y-2">
+            <ul className="space-y-2">
               <li>
-                <span class="font-semibold text-gray-800">Size:</span> 3000 sq ft
+                <span className="font-semibold text-gray-800">Size:</span> 3000 sq ft
               </li>
               <li>
-                <span class="font-semibold text-gray-800">Availability:</span> 09:00-17:00
+                <span className="font-semibold text-gray-800">Availability:</span> 09:00-17:00
               </li>
               <li>
-                <span class="font-semibold text-gray-800">Price:</span> £150/hour
+                <span className="font-semibold text-gray-800">Price:</span> £150/hour
               </li>
               <li>
-                <span class="font-semibold text-gray-800">Address:</span> 555
+                <span className="font-semibold text-gray-800">Address:</span> 555
                 California St, San Francisco, CA 94104
               </li>
             </ul>
           </div>
         </div>
 
-        <div class="mt-6">
-          <h2 class="text-xl font-bold">Book this Room</h2>
-          <form class="mt-4">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="mt-6">
+          <h2 className="text-xl font-bold">Book this Room</h2>
+          <form className="mt-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div>
                 <label
                   htmlFor="check_in_date"
-                  class="block text-sm font-medium text-[#111]"
+                  className="block text-sm font-medium text-[#111]"
                 >
                   Check-In Date
                 </label>
@@ -67,14 +67,14 @@ const RoomPage = ({ params }) => {
                   type="date"
                   id="check_in_date"
                   name="check_in_date"
-                  class="mt-1 block w-full px-3 py-2 border border-[#333] rounded-md shadow-sm focus:ring-[#111] focus:border-[#111] sm:text-sm"
+                  className="mt-1 block w-full px-3 py-2 border border-[#333] rounded-md shadow-sm focus:ring-[#111] focus:border-[#111] sm:text-sm"
                   required
                 />
               </div>
               <div>
                 <label
                   htmlFor="check_in_time"
-                  class="block text-sm font-medium text-[#111]"
+                  className="block text-sm font-medium text-[#111]"
                 >
                   Check-In Time
                 </label>
@@ -82,14 +82,14 @@ const RoomPage = ({ params }) => {
                   type="time"
                   id="check_in_time"
                   name="check_in_time"
-                  class="mt-1 block w-full px-3 py-2 border border-[#333] rounded-md shadow-sm focus:ring-[#111] focus:border-[#111] sm:text-sm"
+                  className="mt-1 block w-full px-3 py-2 border border-[#333] rounded-md shadow-sm focus:ring-[#111] focus:border-[#111] sm:text-sm"
                   required
                 />
               </div>
               <div>
                 <label
                   htmlFor="check_out_date"
-                  class="block text-sm font-medium text-[#111]"
+                  className="block text-sm font-medium text-[#111]"
                 >
                   Check-Out Date
                 </label>
@@ -97,14 +97,14 @@ const RoomPage = ({ params }) => {
                   type="date"
                   id="check_out_date"
                   name="check_out_date"
-                  class="mt-1 block w-full px-3 py-2 border border-[#333] rounded-md shadow-sm focus:ring-[#111] focus:border-[#111] sm:text-sm"
+                  className="mt-1 block w-full px-3 py-2 border border-[#333] rounded-md shadow-sm focus:ring-[#111] focus:border-[#111] sm:text-sm"
                   required
                 />
               </div>
               <div>
                 <label
                   htmlFor="check_out_time"
-                  class="block text-sm font-medium text-[#111]"
+                  className="block text-sm font-medium text-[#111]"
                 >
                   Check-Out Time
                 </label>
@@ -112,16 +112,16 @@ const RoomPage = ({ params }) => {
                   type="time"
                   id="check_out_time"
                   name="check_out_time"
-                  class="mt-1 block w-full px-3 py-2 border border-[#333] rounded-md shadow-sm focus:ring-[#111] focus:border-[#111] sm:text-sm"
+                  className="mt-1 block w-full px-3 py-2 border border-[#333] rounded-md shadow-sm focus:ring-[#111] focus:border-[#111] sm:text-sm"
                   required
                 />
               </div>
             </div>
 
-            <div class="mt-6">
+            <div className="mt-6">
               <button
                 type="submit"
-                class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-[#fff] bg-black hover:bg-[#333] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#111]"
+                className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-[#fff] bg-black hover:bg-[#333] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#111]"
               >
                 Book Room
               </button>

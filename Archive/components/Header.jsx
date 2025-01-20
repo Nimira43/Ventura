@@ -8,7 +8,7 @@ const Header = () => {
         <div className='flex h-16 items-center justify-between'>
           <div className='flex items-center'>
             <Link href='/'>
-              <h1 className='h-12 w-12 p-3 font-bold text-lg'>VV</h1>
+              <h1 className='h-12 w-12 p-3 font-bold text-lg logo'>VV</h1>
             </Link>
             <div className='hidden md:block'>
               <div className='ml-10 flex items-baseline space-x-4'>
@@ -19,13 +19,13 @@ const Header = () => {
                   Rooms
                 </Link>
                 <Link
-                  href='/bookings.html'
+                  href='/bookings'
                   className='rounded-md px-3 py-2 text-sm font-medium text-[#333] hover:bg-[#333] hover:text-[#f5f5dc]'
                 >
                   Bookings
                 </Link>
                 <Link
-                  href='/add-room.html'
+                  href='/add-room'
                   className='rounded-md px-3 py-2 text-sm font-medium text-[#333] hover:bg-[#333] hover:text-[#f5f5dc]'
                 >
                   Add Room
@@ -36,13 +36,13 @@ const Header = () => {
           <div className='ml-auto'>
             <div className='ml-4 flex items-center md:ml-6'>
               <Link
-                href='login.html'
+                href='login'
                 className='mr-3 text-[#333] hover:text-[#f5f5dc]'
               >
                 <FaSignInAlt className='inline mr-1'/> Login
               </Link>
               <Link
-                href='register.html'
+                href='/register'
                 className='mr-3 text-[#333] hover:text-[#f5f5dc]'
               >
                 <FaUser className='inline mr-1'/> Register
@@ -51,7 +51,7 @@ const Header = () => {
                 <FaBuilding className='inline mr-1'/> My Rooms
               </Link>
               <Link
-                href='login.html'
+                href='/login'
                 className='mx-3 text-[#333] hover:text-[#f5f5dc]'
               >
                 <FaSignOutAlt className='inline mr-1'/> Sign Out
@@ -70,13 +70,13 @@ const Header = () => {
             Rooms
           </Link>
           <Link
-            href='/bookings.html'
+            href='/bookings'
             className='block rounded-md px-3 py-2 text-base font-medium text-[#333] hover:bg-[#333] hover:text-[#f5f5dc]'
           >
             Bookings
           </Link>
           <Link
-            href='/add-room.html'
+            href='/add-room'
             className='block rounded-md px-3 py-2 text-base font-medium text-[#333] hover:bg-[#333] hover:text-[#f5f5dc]'
           >
             Add Room

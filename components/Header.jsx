@@ -5,30 +5,30 @@ import { LiaBuilding } from 'react-icons/lia'
 
 const Header = () => {
   return (
-    <header className='bg-[#c4eeff]'>
+    <header className='bg-primary-lg'>
       <nav className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>         
         <div className='flex h-16 items-center justify-between'>
           <div className='flex items-center'>
             <Link href='/'>
-              <h1 className='h-12 w-12 p-3 font-bold text-lg logo'>VV</h1>
+              <h1 className='h-12 w-12 p-3 font-medium text-lg logo'>VV</h1>
             </Link>
             <div className='hidden md:block'>
               <div className='ml-10 flex items-baseline space-x-4'>
                 <Link
                   href='/'
-                  className='rounded-md px-3 py-2 text-sm font-medium text-[#111] hover:bg-[#5286e1] hover:text-[#fff]'
+                  className='rounded-md px-3 py-2 text-sm  text-dark hover:bg-primary hover:text-white'
                 >
                   Rooms
                 </Link>
                 <Link
                   href='/bookings'
-                  className='rounded-md px-3 py-2 text-sm font-medium text-[#111] hover:bg-[#5286e1] hover:text-[#fff]'
+                  className='rounded-md px-3 py-2 text-sm  text-dark   hover:bg-primary hover:text-white'
                 >
                   Bookings
                 </Link>
                 <Link
                   href='/add-room'
-                  className='rounded-md px-3 py-2 text-sm font-medium text-[#111] hover:bg-[#5286e1] hover:text-[#fff]'
+                  className='rounded-md px-3 py-2 text-sm  text-dark hover:bg-primary hover:text-white'
                 >
                   Add Room
                 </Link>
@@ -39,22 +39,25 @@ const Header = () => {
             <div className='ml-4 flex items-center md:ml-6'>
               <Link
                 href='login'
-                className='mr-3 text-[#111] hover:text-[#fff]'
+                className='mr-3 uppercase text-dark hover:text-primary'
               >
                 <PiSignInLight className='inline mr-1'/> Login
               </Link>
               <Link
                 href='/register'
-                className='mr-3 text-[#111] hover:text-[#fff]'
+                className='mr-3 uppercase text-dark hover:text-primary'
               >
                 <AiOutlineUser className='inline mr-1'/> Register
               </Link>
-              <Link href='my-rooms.html'>
+              <Link 
+                href='my-rooms.html'
+                className='mr-3 uppercase text-dark hover:text-primary'
+              >
                 <LiaBuilding className='inline mr-1'/> My Rooms
               </Link>
               <Link
                 href='/login'
-                className='mx-3 text-[#111] hover:text-[#fff]'
+                className='mx-3 uppercase text-dark hover:text-primary'
               >
                 <PiSignOutLight className='inline mr-1'/> Sign Out
               </Link>
@@ -67,19 +70,19 @@ const Header = () => {
         <div className='space-y-1 px-2 pb-3 pt-2 sm:px-3'>
           <Link
             href='/'
-            className='block rounded-md px-3 py-2 text-base font-medium text-[#111] hover:bg-[#5286e1] hover:text-[#fff]'
+            className='block rounded-md px-3 py-2 text-base uppercase text-dark hover:bg-primary hover:text-white'
           >
             Rooms
           </Link>
           <Link
             href='/bookings'
-            className='block rounded-md px-3 py-2 text-base font-medium text-[#111] hover:bg-[#5286e1] hover:text-[#fff]'
+            className='block rounded-md px-3 py-2 text-base uppercase text-dark hover:bg-primary hover:text-white'
           >
             Bookings
           </Link>
           <Link
             href='/add-room'
-            className='block rounded-md px-3 py-2 text-base font-medium text-[#111] hover:bg-[#5286e1] hover:text-[#fff]'
+            className='block rounded-md px-3 py-2 text-base uppercase text-dark hover:bg-primary hover:text-white'
           >
             Add Room
           </Link>

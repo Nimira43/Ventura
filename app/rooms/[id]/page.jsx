@@ -54,9 +54,9 @@ const RoomPage = ({ params }) => {
               </li>
             </ul>
           </div>
-        </div>
-        <BookingForm />
-      </div> */}
+        </div> */}
+        {/* <BookingForm /> */}
+      {/* </div> */}
     </>
    )
 }

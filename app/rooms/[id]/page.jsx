@@ -1,22 +1,22 @@
 import Heading from '@/components/Heading'
-import BookingForm from '@/components/BookingForm'
-import Image from 'next/image'
-import Link from 'next/link'
-import { LuChevronLeftCircle } from 'react-icons/lu'
-// import rooms from '@/data/rooms.json'
+// import BookingForm from '@/components/BookingForm'
+// import Image from 'next/image'
+// import Link from 'next/link'
+// import { LuChevronLeftCircle } from 'react-icons/lu'
+import rooms from '@/data/rooms.json'
 
 const RoomPage = ({ params }) => {
   const { id } = params
-  // const room = rooms.find((room) => room.$id === id)
+  const room = rooms.find((room) => room.$id === id)
 
-  // if (!room) {
-  //   return <Heading title='Room Not Found' />
-  // }
+  if (!room) {
+    return <Heading title='Room Not Found' />
+  }
 
   return (
     <>
-      {/* <Heading title={ room.name } />
-      <div className="bg-light shadow rounded-lg p-6">
+      <Heading title={ room.name } />
+      {/* <div className="bg-light shadow rounded-lg p-6">
         <Link
           href="/"
           className="flex items-center text-grey-dk hover:text-dark mb-4"
@@ -57,7 +57,6 @@ const RoomPage = ({ params }) => {
         </div>
         <BookingForm />
       </div> */}
-      room {id}
     </>
    )
 }

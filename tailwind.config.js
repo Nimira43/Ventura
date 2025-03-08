@@ -17,7 +17,7 @@ module.exports = {
         'grey-xl': '#eee',
         'lighter-blue': '#edf7ff',
         'light': '#ffffee'
-      },
+      },   
     },
   },
   plugins: [],

@@ -1,4 +1,7 @@
 import Heading from '@/components/Heading'
+import Image from 'next/image'
+import Link from 'next/link'
+import { LuChevronLeftCircle } from 'react-icons/lu'
 import rooms from '@/data/rooms.json'
 
 const RoomPage = ({ params }) => {

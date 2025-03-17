@@ -1,7 +1,7 @@
 import Heading from '@/components/Heading'
 import Image from 'next/image'
 import Link from 'next/link'
-import { LuChevronLeftCircle } from 'react-icons/lu'
+import { FaChevronLeft } from "react-icons/fa"
 import rooms from '@/data/rooms.json'
 
 const RoomPage = ({ params }) => {
@@ -19,7 +19,7 @@ const RoomPage = ({ params }) => {
           href="/"
           className="flex items-center text-grey-dk hover:text-dark mb-4"
         >
-          <LuChevronLeftCircle className='inline mr-1' />
+          <FaChevronLeft className='inline mr-1' />
           <span className="ml-2">Back to Rooms</span>
         </Link>
 
@@ -53,7 +53,6 @@ const RoomPage = ({ params }) => {
             </ul>
           </div>
         </div>
-        <BookingForm />
       </div>    
     </>  
   )

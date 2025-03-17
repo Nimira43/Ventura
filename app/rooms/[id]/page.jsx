@@ -16,7 +16,7 @@ const RoomPage = ({ params }) => {
   return (
     <>
       <Heading title={ room.name } />
-      {/* <div className="bg-light shadow rounded-lg p-6">
+      <div className="bg-light shadow rounded-lg p-6">
         <Link
           href="/"
           className="flex items-center text-grey-dk hover:text-dark mb-4"
@@ -54,9 +54,9 @@ const RoomPage = ({ params }) => {
               </li>
             </ul>
           </div>
-        </div> */}
-        {/* <BookingForm /> */}
-      {/* </div> */}
+        </div>
+        <BookingForm />
+      </div>
     </>
    )
 }

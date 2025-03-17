@@ -10,7 +10,7 @@ const Header = () => {
         <div className='flex h-16 items-center justify-between'>
           <div className='flex items-center'>
             <Link href='/'>
-              <h1 className='text-3xl font-medium logo'>vv</h1>
+              <h1 className='text-3xl font-medium logo'>Ventura</h1>
             </Link>
             <div className='hidden md:block'>
               <div className='ml-10 flex items-baseline space-x-4'>

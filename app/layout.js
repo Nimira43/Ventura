@@ -1,5 +1,4 @@
 import { Poppins } from 'next/font/google'
-
 import '@/assets/styles/globals.css'
 
 const poppins = Poppins({
@@ -8,7 +7,7 @@ const poppins = Poppins({
 })
 
 export const metadata = {
-  title: 'Ventura Venues',
+  title: 'Ventura',
   description: 'Booking app using Next, Appwrite and Tailwind',
 }
 
@@ -16,7 +15,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body className={poppins.className}>
-         {children}         
+        <main className='mx-auto max-w-7xl px-4 py-6'>
+          {children}
+        </main>
       </body>
     </html>
   )

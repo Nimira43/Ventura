@@ -66,7 +66,6 @@ const BookingForm = () => {
               />
             </div>
           </div>
-
           <div className='mt-6'>
             <button
               type='submit'

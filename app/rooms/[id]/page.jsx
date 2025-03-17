@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FaChevronLeft } from "react-icons/fa"
 import rooms from '@/data/rooms.json'
+import BookingForm from '@/components/BookingForm'
 
 const RoomPage = ({ params }) => {
   const { id } = params
@@ -39,20 +40,21 @@ const RoomPage = ({ params }) => {
 
             <ul className="space-y-2">
               <li>
-                <span className="font-semibold text-dark">Size:</span> {room.sqft}
+                <span className="font-medium text-dark">Size:</span> {room.sqft}
               </li>
               <li>
-                <span className="font-semibold text-dark">Availability:</span> {room.availability}
+                <span className="font-medium text-dark">Availability:</span> {room.availability}
               </li>
               <li>
-                <span className="font-semibold text-dark">Price:</span> £{room.price_per_hour} per hour
+                <span className="font-medium text-dark">Price:</span> £{room.price_per_hour} per hour
               </li>
               <li>
-                <span className="font-semibold text-dark">Address:</span> {room.address}
+                <span className="font-medium text-dark">Address:</span> {room.address}
               </li>
             </ul>
           </div>
         </div>
+        <BookingForm />
       </div>    
     </>  
   )

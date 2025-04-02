@@ -26,7 +26,7 @@ const createSessionClient = async (session) => {
   if (session) {
     client.setSession(session)
   }
-  
+
   return {
     get account() {
       return new Account(client)
@@ -35,4 +35,9 @@ const createSessionClient = async (session) => {
       return new Databases(client)
     },
   }
+}
+
+export {
+  createAdminClient,
+  createSessionClient
 }

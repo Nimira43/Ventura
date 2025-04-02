@@ -4,6 +4,7 @@ import { PiSignInLight, PiSignOutLight } from 'react-icons/pi'
 import { LiaBuilding } from 'react-icons/lia'
 
 const Header = () => {
+  
   return (
     <header className='bg-primary-lg'>
       <nav className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>         

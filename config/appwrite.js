@@ -9,6 +9,12 @@ const createAdminClient = async () => {
     get account() {
       return new Account(client)
     }
+    get databases() {
+      return new Databases(client)
+    }
+    get account() {
+      return new Storage(client)
+    }
   }
 }
 

@@ -18,3 +18,5 @@ async function getAllRooms() {
     redirect('/error')
   }
 }
+
+export default getAllRooms

@@ -1,6 +1,6 @@
 import Heading from '@/components/Heading'
 import RoomCard from '@/components/RoomCard'
-import rooms from '@/data/rooms.json'
+import 
 
 export default function Home() {
   return (

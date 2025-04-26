@@ -11,8 +11,10 @@ async function getAllRooms() {
       process.env.NEXT_PUBLIC_APPWRITE_DATABASE,
       process.env.NEXT_PUBLIC_APPWRITE_COLLECTION_ROOMS
     )
-  
+    revalidatePath('/', 'layout')
+    return rooms 
   } catch (error) {
-
+    console.log('Failed to get rooms', error)
+    redirect('/error')
   }
 }

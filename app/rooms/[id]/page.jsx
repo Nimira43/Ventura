@@ -2,7 +2,7 @@ import Heading from '@/components/Heading'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaChevronLeft } from "react-icons/fa"
-import rooms from '@/data/rooms.json'
+import getSingleRoom from '@/app/actions/getSingleRoom'
 import BookingForm from '@/components/BookingForm'
 
 const RoomPage = ({ params }) => {

@@ -5,9 +5,9 @@ import { FaChevronLeft } from "react-icons/fa"
 import getSingleRoom from '@/app/actions/getSingleRoom'
 import BookingForm from '@/components/BookingForm'
 
-const RoomPage = ({ params }) => {
+const RoomPage = async ({ params }) => {
   const { id } = params
-  const room = rooms.find((room) => room.$id === id)
+  const room = await getSingleRoom(id)
 
   if (!room) {
     return <Heading title='Room Not Found'/>

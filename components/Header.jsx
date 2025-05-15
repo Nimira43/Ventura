@@ -28,7 +28,7 @@ const Header = () => {
                   Bookings
                 </Link>
                 <Link
-                  href='/add-room'
+                  href='/rooms/add'
                   className='rounded-md px-3 py-2 text-sm  text-dark hover:bg-primary hover:text-white'
                 >
                   Add Room
@@ -39,7 +39,7 @@ const Header = () => {
           <div className='ml-auto'>
             <div className='ml-4 flex items-center md:ml-6'>
               <Link
-                href='login'
+                href='/login'
                 className='mr-3 uppercase text-dark hover:text-primary'
               >
                 <PiSignInLight className='inline mr-1'/> Login
@@ -51,7 +51,7 @@ const Header = () => {
                 <AiOutlineUser className='inline mr-1'/> Register
               </Link>
               <Link 
-                href='my-rooms.html'
+                href='/rooms/my'
                 className='mr-3 uppercase text-dark hover:text-primary'
               >
                 <LiaBuilding className='inline mr-1'/> My Rooms
@@ -82,7 +82,7 @@ const Header = () => {
             Bookings
           </Link>
           <Link
-            href='/add-room'
+            href='/rooms/add'
             className='block rounded-md px-3 py-2 text-base uppercase text-dark hover:bg-primary hover:text-white'
           >
             Add Room

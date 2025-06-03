@@ -5,7 +5,9 @@ const LoginPage= () => {
     <div className='flex items-center justify-center'>
       <div className='bg-light shadow-lg rounded-lg p-6 w-full max-w-sm mt-20'>
         <form>
-          <h2 className='text-2xl font-medium text-center text-dark mb-6 uppercase'>Login</h2>
+          <h2 className='text-2xl font-medium text-center text-dark mb-6 uppercase'>
+            Login
+          </h2>
 
           <div className='mb-4'>
             <label

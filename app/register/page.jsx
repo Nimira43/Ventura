@@ -11,7 +11,7 @@ const RegisterPage= () => {
 
           <div className='mb-4'>
             <label 
-              for='name' 
+              htmlFor='name' 
               className='block text-dark font-normal mb-2'
             >
               Name
@@ -27,7 +27,7 @@ const RegisterPage= () => {
 
           <div className='mb-4'>
             <label 
-              for='email' 
+              htmlFor='email' 
               className='block text-dark font-normal mb-2'
             >
               Email
@@ -43,7 +43,7 @@ const RegisterPage= () => {
 
           <div className='mb-4'>
             <label 
-              for='password' 
+              htmlFor='password' 
               className='block text-dark font-normal mb-2'
             >
               Password
@@ -59,7 +59,7 @@ const RegisterPage= () => {
 
           <div className='mb-6'>
             <label
-              for='confirm-password'
+              htmlFor='confirm-password'
               className='block text-dark font-normal mb-2'
             >
               Confirm Password

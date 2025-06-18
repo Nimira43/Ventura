@@ -6,7 +6,7 @@ import { LiaBuilding } from 'react-icons/lia'
 const Header = () => {
   
   return (
-    <header className='bg-primary-lg'>
+    <header className='bg-primary-light'>
       <nav className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>         
         <div className='flex h-16 items-center justify-between'>
           <div className='flex items-center'>
@@ -17,19 +17,19 @@ const Header = () => {
               <div className='ml-10 flex items-baseline space-x-4'>
                 <Link
                   href='/'
-                  className='rounded-md px-3 py-2 text-sm text-dark hover:bg-primary hover:text-white uppercase font-medium btn-hover'
+                  className='rounded-md px-3 py-2 text-sm text-dark hover:bg-primary hover:text-light uppercase font-medium btn-hover'
                 >
                   Rooms
                 </Link>
                 <Link
                   href='/bookings'
-                  className='rounded-md px-3 py-2 text-sm text-dark hover:bg-primary hover:text-white uppercase font-medium btn-hover'
+                  className='rounded-md px-3 py-2 text-sm text-dark hover:bg-primary hover:text-light uppercase font-medium btn-hover'
                 >
                   Bookings
                 </Link>
                 <Link
                   href='/rooms/add'
-                  className='rounded-md px-3 py-2 text-sm text-dark hover:bg-primary hover:text-white uppercase font-medium btn-hover'
+                  className='rounded-md px-3 py-2 text-sm text-dark hover:bg-primary hover:text-light uppercase font-medium btn-hover'
                 >
                   Add Room
                 </Link>
@@ -71,19 +71,19 @@ const Header = () => {
         <div className='space-y-1 px-2 pb-3 pt-2 sm:px-3'>
           <Link
             href='/'
-            className='block rounded-md px-3 py-2 text-base text-dark hover:bg-primary hover:text-white uppercase font-medium btn-hover'
+            className='block rounded-md px-3 py-2 text-base text-dark hover:bg-primary hover:text-light uppercase font-medium btn-hover'
           >
             Rooms
           </Link>
           <Link
             href='/bookings'
-            className='block rounded-md px-3 py-2 text-base text-dark hover:bg-primary hover:text-white uppercase font-medium btn-hover'
+            className='block rounded-md px-3 py-2 text-base text-dark hover:bg-primary hover:text-light uppercase font-medium btn-hover'
           >
             Bookings
           </Link>
           <Link
             href='/rooms/add'
-            className='block rounded-md px-3 py-2 text-base text-dark hover:bg-primary hover:text-white uppercase font-medium btn-hover'
+            className='block rounded-md px-3 py-2 text-base text-dark hover:bg-primary hover:text-light uppercase font-medium btn-hover'
           >
             Add Room
           </Link>

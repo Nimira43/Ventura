@@ -18,7 +18,7 @@ const RoomPage = async ({ params }) => {
       <div className='bg-light shadow rounded-lg p-6'>
         <Link
           href='/'
-          className='flex items-center text-grey-dk hover:text-primary mb-4'
+          className='flex items-center text-grey-dark hover:text-primary mb-4'
         >
           <FaChevronLeft className='inline mr-1' />
           <span className='uppercase font-medium'>Back to Rooms</span>
@@ -34,7 +34,7 @@ const RoomPage = async ({ params }) => {
           />
 
           <div className='mt-4 sm:mt-0 sm:flex-1'>
-            <p className='text-grey-dk mb-4'>
+            <p className='text-grey-dark mb-4'>
               {room.description}
             </p>
 

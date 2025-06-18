@@ -17,19 +17,19 @@ const Header = () => {
               <div className='ml-10 flex items-baseline space-x-4'>
                 <Link
                   href='/'
-                  className='rounded-md px-3 py-2 text-sm text-dark hover:bg-primary hover:text-white'
+                  className='rounded-md px-3 py-2 text-sm text-dark hover:bg-primary hover:text-white uppercase font-medium btn-hover'
                 >
                   Rooms
                 </Link>
                 <Link
                   href='/bookings'
-                  className='rounded-md px-3 py-2 text-sm  text-dark   hover:bg-primary hover:text-white'
+                  className='rounded-md px-3 py-2 text-sm  text-dark hover:bg-primary hover:text-white uppercase font-medium btn-hover'
                 >
                   Bookings
                 </Link>
                 <Link
                   href='/rooms/add'
-                  className='rounded-md px-3 py-2 text-sm  text-dark hover:bg-primary hover:text-white'
+                  className='rounded-md px-3 py-2 text-sm  text-dark hover:bg-primary hover:text-white uppercase font-medium btn-hover'
                 >
                   Add Room
                 </Link>
@@ -40,27 +40,27 @@ const Header = () => {
             <div className='ml-4 flex items-center md:ml-6'>
               <Link
                 href='/login'
-                className='mr-3 uppercase text-dark hover:text-primary'
+                className='mr-3 text-dark hover:text-primary uppercase font-medium btn-hover'
               >
-                <PiSignInLight className='inline mr-1'/> Login
+                <PiSignInLight className='inline'/> Login
               </Link>
               <Link
                 href='/register'
-                className='mr-3 uppercase text-dark hover:text-primary'
+                className='mr-3 text-dark hover:text-primary uppercase font-medium btn-hover'
               >
-                <AiOutlineUser className='inline mr-1'/> Register
+                <AiOutlineUser className='inline'/> Register
               </Link>
               <Link 
                 href='/rooms/my'
-                className='mr-3 uppercase text-dark hover:text-primary'
+                className='mr-3 text-dark hover:text-primary uppercase font-medium btn-hover'
               >
-                <LiaBuilding className='inline mr-1'/> My Rooms
+                <LiaBuilding className='inline'/> My Rooms
               </Link>
               <Link
                 href='/login'
-                className='mx-3 uppercase text-dark hover:text-primary'
+                className='mx-3 text-dark hover:text-primary uppercase font-medium btn-hover'
               >
-                <PiSignOutLight className='inline mr-1'/> Sign Out
+                <PiSignOutLight className='inline'/> Sign Out
               </Link>
             </div>
           </div>
@@ -71,19 +71,19 @@ const Header = () => {
         <div className='space-y-1 px-2 pb-3 pt-2 sm:px-3'>
           <Link
             href='/'
-            className='block rounded-md px-3 py-2 text-base uppercase text-dark hover:bg-primary hover:text-white'
+            className='block rounded-md px-3 py-2 text-base text-dark hover:bg-primary hover:text-white uppercase font-medium btn-hover'
           >
             Rooms
           </Link>
           <Link
             href='/bookings'
-            className='block rounded-md px-3 py-2 text-base uppercase text-dark hover:bg-primary hover:text-white'
+            className='block rounded-md px-3 py-2 text-base text-dark hover:bg-primary hover:text-white uppercase font-medium btn-hover'
           >
             Bookings
           </Link>
           <Link
             href='/rooms/add'
-            className='block rounded-md px-3 py-2 text-base uppercase text-dark hover:bg-primary hover:text-white'
+            className='block rounded-md px-3 py-2 text-base text-dark hover:bg-primary hover:text-white uppercase font-medium btn-hover'
           >
             Add Room
           </Link>

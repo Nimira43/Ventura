@@ -2,7 +2,7 @@ const BookingForm = () => {
   return ( 
     <>
       <div className='mt-6'>
-        <h2 className='text-xl font-semibold'>Book this Room</h2>
+        <h2 className='text-lg font-medium uppercase'>Book this Room</h2>
         <form className='mt-4'>
           <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
             <div>
@@ -69,7 +69,7 @@ const BookingForm = () => {
           <div className='mt-6'>
             <button
               type='submit'
-              className='w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-[#fff] bg-black hover:bg-grey-dk focus:outline-none'
+              className='w-full flex justify-center bg-primary-lg text-dark hover:text-light px-4 py-2 rounded hover:bg-primary uppercase font-medium btn-hover'
             >
               Book Room
             </button>

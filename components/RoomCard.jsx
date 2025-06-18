@@ -36,7 +36,7 @@ const RoomCard = ({ room }) => {
       >
         <Link
           href={`/rooms/${room.$id}`}
-          className='bg-primary-lg hover:bg-primary text-dark hover:text-light px-4 py-2 rounded mb-2 sm:mb-0 w-full sm:w-auto text-center hover:bg-dark]'
+          className='bg-primary-lg hover:bg-primary text-dark hover:text-light px-4 py-2 rounded mb-2 sm:mb-0 w-full sm:w-auto text-center hover:bg-dark] uppercase font-medium btn-hover'
         >
           View Room
         </Link>  

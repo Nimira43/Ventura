@@ -23,13 +23,13 @@ const Header = () => {
                 </Link>
                 <Link
                   href='/bookings'
-                  className='rounded-md px-3 py-2 text-sm  text-dark hover:bg-primary hover:text-white uppercase font-medium btn-hover'
+                  className='rounded-md px-3 py-2 text-sm text-dark hover:bg-primary hover:text-white uppercase font-medium btn-hover'
                 >
                   Bookings
                 </Link>
                 <Link
                   href='/rooms/add'
-                  className='rounded-md px-3 py-2 text-sm  text-dark hover:bg-primary hover:text-white uppercase font-medium btn-hover'
+                  className='rounded-md px-3 py-2 text-sm text-dark hover:bg-primary hover:text-white uppercase font-medium btn-hover'
                 >
                   Add Room
                 </Link>

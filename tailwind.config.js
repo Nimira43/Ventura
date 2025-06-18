@@ -10,13 +10,14 @@ module.exports = {
       colors: {
         'primary': '#5286e1',
         'primary-lg': '#c4eeff',
+        'primary-light': '#c4eeff',
         'dark': '#111',
+        'light': '#ffffee',
         'grey-dk': '#333',
         'grey-md': '#888',
         'grey-lg': '#ccc',
         'grey-xl': '#eee',
-        'lighter-blue': '#edf7ff',
-        'light': '#ffffee'
+        'lighter-blue': '#edf7ff', 
       },   
     },
   },

@@ -16,17 +16,17 @@ const RoomCard = ({ room }) => {
           priority
         />
         <div className='space-y-1'>
-          <h4 className='text-lg normal uppercase'>{room.name}</h4>
+          <h4 className='text-lg font-medium uppercase'>{room.name}</h4>
           <p className='text-sm text-dark '>
-            <span className='font-semibold text-grey-dk'> Address: </span>
+            <span className='font-medium text-grey-dk'> Address: </span>
             {room.address}
           </p>
           <p className='text-sm text-dark '>
-            <span className='font-semibold text-grey-dk'> Availability: </span>
+            <span className='font-medium text-grey-dk'> Availability: </span>
             {room.availability}
           </p>
           <p className='text-sm text-dark '>
-            <span className='font-semibold text-grey-dk'> Price: </span>
+            <span className='font-medium text-grey-dk'> Price: </span>
             £{room.price_per_hour} per hour
           </p>
         </div>

@@ -18,15 +18,15 @@ const RoomCard = ({ room }) => {
         <div className='space-y-1'>
           <h4 className='text-lg font-medium uppercase'>{room.name}</h4>
           <p className='text-sm text-dark '>
-            <span className='font-medium text-grey-dk'> Address: </span>
+            <span className='font-medium text-grey-dark'> Address: </span>
             {room.address}
           </p>
           <p className='text-sm text-dark '>
-            <span className='font-medium text-grey-dk'> Availability: </span>
+            <span className='font-medium text-grey-dark'> Availability: </span>
             {room.availability}
           </p>
           <p className='text-sm text-dark '>
-            <span className='font-medium text-grey-dk'> Price: </span>
+            <span className='font-medium text-grey-dark'> Price: </span>
             £{room.price_per_hour} per hour
           </p>
         </div>
@@ -36,7 +36,7 @@ const RoomCard = ({ room }) => {
       >
         <Link
           href={`/rooms/${room.$id}`}
-          className='bg-primary-lg hover:bg-primary text-dark hover:text-light px-4 py-2 rounded mb-2 sm:mb-0 w-full sm:w-auto text-center hover:bg-dark] uppercase font-medium btn-hover'
+          className='bg-primary-light hover:bg-primary text-dark hover:text-light px-4 py-2 rounded mb-2 sm:mb-0 w-full sm:w-auto text-center hover:bg-dark] uppercase font-medium btn-hover'
         >
           View Room
         </Link>  

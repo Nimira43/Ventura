@@ -10,7 +10,7 @@ const LoginPage= () => {
   const [state, formAction] = useFormState(createSession, {})
 
   useEffect(() => {
-    if (state.error) console.log(state.error)
+    if (state.error) toast.error(state.error)
   }, [state]) 
 
   return ( 

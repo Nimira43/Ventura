@@ -28,7 +28,7 @@ const LoginPage= () => {
               id='email'
               name='email'
               className='border rounded w-full py-2 px-3'
-              required
+
             />
           </div>
 

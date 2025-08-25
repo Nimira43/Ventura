@@ -6,7 +6,7 @@ import { useFormState } from 'react-dom'
 import createSession from '../actions/createSession'
 
 const LoginPage= () => {
-  const [state, formAction] = useFormState()
+  const [state, formAction] = useFormState(createSession, {})
 
   return ( 
     <div className='flex items-center justify-center'>

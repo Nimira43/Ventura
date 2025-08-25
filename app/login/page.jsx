@@ -11,7 +11,7 @@ const LoginPage= () => {
   return ( 
     <div className='flex items-center justify-center'>
       <div className='bg-light shadow-lg rounded-lg p-6 w-full max-w-sm mt-20'>
-        <form action={ createSession }>
+        <form action={ formAction }>
           <h2 className='text-2xl font-medium text-center text-dark mb-6 uppercase'>
             Login
           </h2>

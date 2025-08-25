@@ -8,7 +8,9 @@ import createSession from '../actions/createSession'
 const LoginPage= () => {
   const [state, formAction] = useFormState(createSession, {})
 
-  useEffect(() => {}, [state]) 
+  useEffect(() => {
+    if (state.error) console.log(state.error)
+  }, [state]) 
 
   return ( 
     <div className='flex items-center justify-center'>

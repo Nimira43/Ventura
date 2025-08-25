@@ -10,11 +10,13 @@ import createSession from '../actions/createSession'
 const LoginPage= () => {
   const [state, formAction] = useFormState(createSession, {})
 
+  const router = useRouter()
+
   useEffect(() => {
     if (state.error) toast.error(state.error)
     if (state.success) {
       toast.success('Logged in successfully.')
-
+      router.push('/')
     }
   }, [state]) 
 

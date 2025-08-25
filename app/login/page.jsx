@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import { useEffect } from 'react'
 import { useFormState } from 'react-dom'
 import { toast } from 'react-toastify'
@@ -11,6 +12,10 @@ const LoginPage= () => {
 
   useEffect(() => {
     if (state.error) toast.error(state.error)
+    if (state.success) {
+      toast.success('Logged in successfully.')
+
+    }
   }, [state]) 
 
   return ( 
@@ -33,7 +38,7 @@ const LoginPage= () => {
               id='email'
               name='email'
               className='border rounded w-full py-2 px-3'
-
+              required
             />
           </div>
 

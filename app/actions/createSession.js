@@ -1,4 +1,5 @@
 'use server'
+import { createAdminClient } from '@/config/appwrite'
 
 async function createSession(previousState, formData) {
   const email = formData.get('email')

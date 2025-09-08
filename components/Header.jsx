@@ -6,7 +6,7 @@ import { PiSignInLight, PiSignOutLight } from 'react-icons/pi'
 import { LiaBuilding } from 'react-icons/lia'
 import destroySession from '@/app/actions/destroySession'
 import { useRouter } from 'next/navigation'
-
+import { toast } from 'react-toastify'
 
 const Header = () => {
   const router = useRouter()

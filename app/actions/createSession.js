@@ -11,6 +11,14 @@ async function createSession(previousState, formData) {
     }
   }
 
+  const { account } = await createAdminClient()
+
+  try {
+    
+  } catch (error) {
+    
+  }
+
   return {
     success: true,
   }

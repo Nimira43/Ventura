@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import { AiOutlineUser } from 'react-icons/ai'
 import { PiSignInLight, PiSignOutLight } from 'react-icons/pi'
@@ -59,12 +61,11 @@ const Header = () => {
               >
                 <LiaBuilding className='inline'/> My Rooms
               </Link>
-              <Link
-                href='/login'
+              <button
                 className='mx-3 text-dark hover:text-primary uppercase font-medium btn-hover'
               >
                 <PiSignOutLight className='inline'/> Sign Out
-              </Link>
+              </button>
             </div>
           </div>
         </div>

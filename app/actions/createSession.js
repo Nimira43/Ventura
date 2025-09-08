@@ -28,6 +28,9 @@ async function createSession(previousState, formData) {
     }
   } catch (error) {
     console.log('Authentication Error: ', error)    
+    return {
+      error: 'Invalid Credentials.'
+    }
   }
 }
 

@@ -7,8 +7,19 @@ import { LiaBuilding } from 'react-icons/lia'
 import destroySession from '@/app/actions/destroySession'
 import { useRouter } from 'next/navigation'
 
+
 const Header = () => {
   const router = useRouter()
+
+  const handleLogout = async () => {
+    const { success, error } = await destroySession()
+
+    if (success) {
+      router.push('/login')
+    } else {
+
+    }
+  }
   
   return (
     <header className='bg-primary-light'>

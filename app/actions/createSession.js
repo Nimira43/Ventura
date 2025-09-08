@@ -1,5 +1,6 @@
 'use server'
 import { createAdminClient } from '@/config/appwrite'
+import { cookies } from 'next/headers'
 
 async function createSession(previousState, formData) {
   const email = formData.get('email')
@@ -14,7 +15,9 @@ async function createSession(previousState, formData) {
   const { account } = await createAdminClient()
 
   try {
-   const session = await account.createEmailPasswordSession(email, password) 
+    const session = await account.createEmailPasswordSession(email, password)
+     
+
   } catch (error) {
     
   }

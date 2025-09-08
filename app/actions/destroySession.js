@@ -7,7 +7,7 @@ async function destroySession() {
 
   if (!sessionCookie) {
     return {
-      error: 'No session cookie found'
+      error: 'No session cookie found.',
     } 
   }
   try {
@@ -17,12 +17,12 @@ async function destroySession() {
     cookies().delete('appwrite-session')
 
     return {
-      success: true
+      success: true,
     }
 
   } catch (error) {   
     return {
-      error: 'Error deleting session.'
+      error: 'Error deleting session.',
     }
   }
 }

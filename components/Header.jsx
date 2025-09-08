@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { AiOutlineUser } from 'react-icons/ai'
 import { PiSignInLight, PiSignOutLight } from 'react-icons/pi'
 import { LiaBuilding } from 'react-icons/lia'
+import destroySession from '@/app/actions/destroySession'
 
 const Header = () => {
   

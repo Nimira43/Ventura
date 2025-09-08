@@ -17,7 +17,7 @@ const Header = () => {
     if (success) {
       router.push('/login')
     } else {
-
+      toast.error(error)
     }
   }
   

@@ -14,6 +14,12 @@ async function destroySession() {
     const { account} = await createSessionClient(sessionCookie.value)
 
     await account.deleteSession('current')
+    cookies().delete('appwrite-session')
+
+    return {
+      success: true
+    }
+
   } catch (error) {   
     return {
       error: 'Error deleting session.'

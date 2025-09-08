@@ -3,7 +3,7 @@ import { AiOutlineUser } from 'react-icons/ai'
 import { PiSignInLight, PiSignOutLight } from 'react-icons/pi'
 import { LiaBuilding } from 'react-icons/lia'
 import destroySession from '@/app/actions/destroySession'
-
+import { useRouter } from 'next/navigation'
 const Header = () => {
   
   return (

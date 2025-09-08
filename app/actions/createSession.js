@@ -23,9 +23,11 @@ async function createSession(previousState, formData) {
       expires: new Date(session.expire),
       path: '/'
     })
-
+    return {
+      success: true
+    }
   } catch (error) {
-    
+    console.log('Authentication Error: ', error)    
   }
 }
 

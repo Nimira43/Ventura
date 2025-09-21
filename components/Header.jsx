@@ -16,7 +16,8 @@ const Header = () => {
 
   useEffect(() => {
     const fetchAuthStatus = async () => {
-      
+      const result = await checkAuth()
+      setIsAuthenticated(result.isAuthenticated)
     }
   }, [])
 

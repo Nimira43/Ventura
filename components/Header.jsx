@@ -1,17 +1,18 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { AiOutlineUser } from 'react-icons/ai'
 import { PiSignInLight, PiSignOutLight } from 'react-icons/pi'
 import { LiaBuilding } from 'react-icons/lia'
 import destroySession from '@/app/actions/destroySession'
-import { useRouter } from 'next/navigation'
-import { toast } from 'react-toastify'
 import checkAuth from '@/app/actions/checkAuth'
+import { toast } from 'react-toastify'
 
 const Header = () => {
   const router = useRouter()
+  const [isAuthenticated, setIsAuthenticated] = useState(null)
 
   const handleLogout = async () => {
     const { success, error } = await destroySession()

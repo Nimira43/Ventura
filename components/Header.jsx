@@ -90,21 +90,21 @@ const Header = () => {
                   </Link>
                 </>
               )}
-              
+
               {isAuthenticated && (
                 <>
-                <Link 
-                  href='/rooms/my'
-                  className='mr-3 text-dark hover:text-primary uppercase font-medium btn-hover'
-                >
-                  <LiaBuilding className='inline'/> My Rooms
-                </Link>
-                <button
-                  onClick={handleLogout}
-                  className='mx-3 text-dark hover:text-primary uppercase font-medium btn-hover'
-                >
-                  <PiSignOutLight className='inline'/> Sign Out
-                </button>
+                  <Link 
+                    href='/rooms/my'
+                    className='mr-3 text-dark hover:text-primary uppercase font-medium btn-hover'
+                  >
+                    <LiaBuilding className='inline'/> My Rooms
+                  </Link>
+                  <button
+                    onClick={handleLogout}
+                    className='mx-3 text-dark hover:text-primary uppercase font-medium btn-hover'
+                  >
+                    <PiSignOutLight className='inline'/> Sign Out
+                  </button>
                 </>  
               )}
               
@@ -121,18 +121,25 @@ const Header = () => {
           >
             Rooms
           </Link>
-          <Link
-            href='/bookings'
-            className='block rounded-md px-3 py-2 text-base text-dark hover:bg-primary hover:text-light uppercase font-medium btn-hover'
-          >
-            Bookings
-          </Link>
-          <Link
-            href='/rooms/add'
-            className='block rounded-md px-3 py-2 text-base text-dark hover:bg-primary hover:text-light uppercase font-medium btn-hover'
-          >
-            Add Room
-          </Link>
+
+          {isAuthenticated && (
+            <>
+              <Link
+                href='/bookings'
+                className='block rounded-md px-3 py-2 text-base text-dark hover:bg-primary hover:text-light uppercase font-medium btn-hover'
+              >
+                Bookings
+              </Link>
+              <Link
+                href='/rooms/add'
+                className='block rounded-md px-3 py-2 text-base text-dark hover:bg-primary hover:text-light uppercase font-medium btn-hover'
+              >
+                Add Room
+              </Link>  
+            </>
+          )}
+
+          
         </div>
       </div>
     </header>

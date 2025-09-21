@@ -11,6 +11,12 @@ async function checkAuth() {
       isAuthenticated: false
     }
   }
+
+  try {
+    
+  } catch (error) {
+    
+  }
 }
 
 export default checkAuth

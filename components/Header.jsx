@@ -1,6 +1,5 @@
 'use client'
 
-import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { AiOutlineUser } from 'react-icons/ai'
@@ -12,7 +11,7 @@ import { useAuth } from '@/context/authContext'
 
 const Header = () => {
   const router = useRouter()
-  const [isAuthenticated, setIsAuthenticated] = useState(null)
+  const {isAuthenticated, setIsAuthenticated} = useAuth()
 
 
   const handleLogout = async () => {

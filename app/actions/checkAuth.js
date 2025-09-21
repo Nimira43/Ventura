@@ -13,7 +13,7 @@ async function checkAuth() {
   }
 
   try {
-    
+    const { account } = await createSessionClient(sessionCookie.value)
   } catch (error) {
     
   }

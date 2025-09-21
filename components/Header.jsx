@@ -7,6 +7,7 @@ import { LiaBuilding } from 'react-icons/lia'
 import destroySession from '@/app/actions/destroySession'
 import { useRouter } from 'next/navigation'
 import { toast } from 'react-toastify'
+import checkAuth from '@/app/actions/checkAuth'
 
 const Header = () => {
   const router = useRouter()

@@ -17,6 +17,7 @@ const LoginPage= () => {
     if (state.error) toast.error(state.error)
     if (state.success) {
       toast.success('Logged in successfully.')
+      setIsAuthenticated(true)
       router.push('/')
     }
   }, [state]) 

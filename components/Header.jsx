@@ -73,18 +73,24 @@ const Header = () => {
           </div>
           <div className='ml-auto'>
             <div className='ml-4 flex items-center md:ml-6'>
-              <Link
-                href='/login'
-                className='mr-3 text-dark hover:text-primary uppercase font-medium btn-hover'
-              >
-                <PiSignInLight className='inline'/> Login
-              </Link>
-              <Link
-                href='/register'
-                className='mr-3 text-dark hover:text-primary uppercase font-medium btn-hover'
-              >
-                <AiOutlineUser className='inline'/> Register
-              </Link>
+
+              {!isAuthenticated && (
+                <>
+                  <Link
+                    href='/login'
+                    className='mr-3 text-dark hover:text-primary uppercase font-medium btn-hover'
+                  >
+                    <PiSignInLight className='inline'/> Login
+                  </Link>
+                  <Link
+                    href='/register'
+                    className='mr-3 text-dark hover:text-primary uppercase font-medium btn-hover'
+                  >
+                    <AiOutlineUser className='inline'/> Register
+                  </Link>
+                </>
+              )}
+
               <Link 
                 href='/rooms/my'
                 className='mr-3 text-dark hover:text-primary uppercase font-medium btn-hover'

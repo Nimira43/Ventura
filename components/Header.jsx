@@ -14,6 +14,13 @@ const Header = () => {
   const router = useRouter()
   const [isAuthenticated, setIsAuthenticated] = useState(null)
 
+  useEffect(() => {
+    const fetchAuthStatus = async () => {
+      
+    }
+  }, [])
+
+
   const handleLogout = async () => {
     const { success, error } = await destroySession()
 

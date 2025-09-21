@@ -10,7 +10,7 @@ import { useAuth } from '@/context/authContext'
 
 const LoginPage= () => {
   const [state, formAction] = useFormState(createSession, {})
-
+  const { isAuthenticated, setIsAuthenticated} = useAuth()
   const router = useRouter()
 
   useEffect(() => {

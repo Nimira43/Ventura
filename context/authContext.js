@@ -7,6 +7,12 @@ export const AuthProvider = ({children}) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
   const [currentUser, setUseCurrentUser] = useState(null)
 
+  useEffect(() => {
+    const checkAuthentication = async () => {
+      
+    }
+  }, [])
+
   return (
     <AuthContext.Provider 
       value={{

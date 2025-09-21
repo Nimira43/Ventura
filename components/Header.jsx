@@ -13,11 +13,11 @@ const Header = () => {
   const router = useRouter()
   const {isAuthenticated, setIsAuthenticated} = useAuth()
 
-
   const handleLogout = async () => {
     const { success, error } = await destroySession()
 
     if (success) {
+      setIsAuthenticated(false)
       router.push('/login')
     } else {
       toast.error(error)

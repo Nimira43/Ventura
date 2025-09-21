@@ -90,19 +90,24 @@ const Header = () => {
                   </Link>
                 </>
               )}
-
-              <Link 
-                href='/rooms/my'
-                className='mr-3 text-dark hover:text-primary uppercase font-medium btn-hover'
-              >
-                <LiaBuilding className='inline'/> My Rooms
-              </Link>
-              <button
-                onClick={handleLogout}
-                className='mx-3 text-dark hover:text-primary uppercase font-medium btn-hover'
-              >
-                <PiSignOutLight className='inline'/> Sign Out
-              </button>
+              
+              {isAuthenticated && (
+                <>
+                <Link 
+                  href='/rooms/my'
+                  className='mr-3 text-dark hover:text-primary uppercase font-medium btn-hover'
+                >
+                  <LiaBuilding className='inline'/> My Rooms
+                </Link>
+                <button
+                  onClick={handleLogout}
+                  className='mx-3 text-dark hover:text-primary uppercase font-medium btn-hover'
+                >
+                  <PiSignOutLight className='inline'/> Sign Out
+                </button>
+                </>  
+              )}
+              
             </div>
           </div>
         </div>

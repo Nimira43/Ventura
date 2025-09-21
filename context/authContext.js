@@ -4,5 +4,5 @@ import checkAuth from '@/app/actions/checkAuth'
 const AuthContext = createContext()
 
 export const AuthProvider = ({children}) => {
-  
+  const [isAuthenticated, setIsAuthenticated] = useState(false)
 }

@@ -19,6 +19,8 @@ const Header = () => {
       const result = await checkAuth()
       setIsAuthenticated(result.isAuthenticated)
     }
+
+    fetchAuthStatus()
   }, [])
 
 

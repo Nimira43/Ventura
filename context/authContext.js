@@ -5,12 +5,13 @@ const AuthContext = createContext()
 
 export const AuthProvider = ({children}) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
-  const [currentUser, setUseCurrentUser] = useState(null)
+  const [currentUser, setCurrentUser] = useState(null)
 
   useEffect(() => {
     const checkAuthentication = async () => {
       const {isAuthenticated, user} = await checkAuth()
-      
+      setIsAuthenticated(isAuthenticated)
+      setCurrentUser(user)
     }
   }, [])
 
@@ -20,7 +21,7 @@ export const AuthProvider = ({children}) => {
         isAuthenticated,
         setIsAuthenticated,
         currentUser,
-        setUseCurrentUser
+        setCurrentUser
       }}
     >
       {children}

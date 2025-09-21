@@ -6,6 +6,7 @@ import { useEffect } from 'react'
 import { useFormState } from 'react-dom'
 import { toast } from 'react-toastify'
 import createSession from '../actions/createSession'
+import { useAuth } from '@/context/authContext'
 
 const LoginPage= () => {
   const [state, formAction] = useFormState(createSession, {})

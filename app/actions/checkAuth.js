@@ -25,7 +25,9 @@ async function checkAuth() {
       }
     }
   } catch (error) {
-    
+    return {
+      isAuthenticated: false
+    }
   }
 }
 

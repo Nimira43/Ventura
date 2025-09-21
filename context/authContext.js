@@ -13,6 +13,8 @@ export const AuthProvider = ({children}) => {
       setIsAuthenticated(isAuthenticated)
       setCurrentUser(user)
     }
+
+    checkAuthentication()
   }, [])
 
   return (

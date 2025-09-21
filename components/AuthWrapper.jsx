@@ -2,8 +2,12 @@
 
 import { AuthProvider } from '@/context/authContext'
 
-const AuthWrapper = () => {
-  return (  )
+const AuthWrapper = ({children}) => {
+  return ( 
+    <AuthProvider>
+      {children}
+    </AuthProvider>
+  )
 }
  
 export default AuthWrapper

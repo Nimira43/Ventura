@@ -7,7 +7,7 @@ async function createUser(previousState, formData) {
   const name = formData.get('name')
   const email = formData.get('email')
   const password = formData.get('password')
-
+  const confirmPassword = formData.get('confirm-password')
 
   if (!email || !password) {
     return {
@@ -21,6 +21,11 @@ async function createUser(previousState, formData) {
     }
   }
 
+  if (password !== confirmPassword) {
+    return {
+      error: 'Passwords do not match.'
+    }
+  }
 
 }
 

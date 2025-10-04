@@ -31,8 +31,15 @@ async function createUser(previousState, formData) {
   
   try {
     await account.create(ID.unique(), email, password, name)
+
+    return {
+      success: true
+    }
   } catch (error) {
-    
+    console.log('Registration Error: ', error)   
+    return {
+      error: 'Could not register user.'
+    } 
   }
 
 }

@@ -30,7 +30,7 @@ async function createUser(previousState, formData) {
   const { account } = await createAdminClient()
   
   try {
-    
+    await account.create(ID.unique(), email, password, name)
   } catch (error) {
     
   }

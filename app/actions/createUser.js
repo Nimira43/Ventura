@@ -27,6 +27,14 @@ async function createUser(previousState, formData) {
     }
   }
 
+  const { account } = await createAdminClient()
+  
+  try {
+    
+  } catch (error) {
+    
+  }
+
 }
 
 export default createUser()

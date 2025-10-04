@@ -41,7 +41,6 @@ async function createUser(previousState, formData) {
       error: 'Could not register user.'
     } 
   }
-
 }
 
 export default createUser()

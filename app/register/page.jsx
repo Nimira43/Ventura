@@ -12,14 +12,18 @@ const RegisterPage= () => {
   const router = useRouter()
 
   useEffect(() => {
-    
+    if (state.error) toast.error(state.error)
+    if (state.success) {
+      toast.success('You can now log in.')
+      router.push('/login')
+    }
   }, [state])
 
 
   return ( 
     <div className='flex items-center justify-center'>
       <div className='bg-light shadow-lg rounded-lg p-6 w-full max-w-sm mt-20'>
-        <form>
+        <form action={formAction}>
           <h2 className='text-2xl font-medium text-center text-dark mb-6 uppercase'>
             Register
           </h2>

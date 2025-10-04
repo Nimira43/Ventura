@@ -8,7 +8,12 @@ import createUser from '@/app/actions/createUser'
 import Link from 'next/link'
 
 const RegisterPage= () => {
-  const [state, formAction] = useFormState()
+  const [state, formAction] = useFormState(createUser, {})
+  const router = useRouter()
+
+  useEffect(() => {
+    
+  }, [state])
 
 
   return ( 

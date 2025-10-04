@@ -8,6 +8,13 @@ async function createUser(previousState, formData) {
   const email = form.Data.get('email')
   const password = form.Data.get('password')
 
+  if (!email || !password) {
+    return {
+      error: 'Please fill in all fields.',
+    }
+  }
+
+  
 }
 
 export default createUser()

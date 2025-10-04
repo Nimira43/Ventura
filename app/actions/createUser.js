@@ -2,3 +2,9 @@
 
 import { createAdminClient } from '@/config/appwrite'
 import { ID } from 'node-appwrite'
+
+async function createUser() {
+
+}
+
+export default createUser()

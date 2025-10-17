@@ -1,6 +1,11 @@
+import Heading from '@/components/Heading'
+
 const AddRoomPage = () => {
   return ( 
-    <div>Add Room</div>
+    <>
+      <Heading title='Add Room' />
+      
+    </>
    )
 }
  

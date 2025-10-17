@@ -8,152 +8,150 @@ const AddRoomPage = () => {
         <form>
           <div className='mb-4'>
             <label
-              htmlFor='email'
+              htmlFor='name'
               className='block text-dark font-normal mb-2'
             >
-              Email
+              Room Name
             </label>
             <input
-              type='email'
-              id='email'
-              name='email'
+              type='text'
+              id='name'
+              name='name'
               className='border rounded w-full py-2 px-3'
               required
             />
           </div>
           <div className='mb-4'>
             <label
-              htmlFor='email'
+              htmlFor='description'
               className='block text-dark font-normal mb-2'
             >
-              Email
+              Description
+            </label>
+            <textarea
+              id='description'
+              name='description'
+              className='border rounded w-full h-24 py-2 px-3'
+              required
+            ></textarea>
+          </div>
+          <div className='mb-4'>
+            <label
+              htmlFor='sqft'
+              className='block text-dark font-normal mb-2'
+            >
+              Square Feet
             </label>
             <input
-              type='email'
-              id='email'
-              name='email'
+              type='number'
+              id='sqft'
+              name='sqft'
               className='border rounded w-full py-2 px-3'
               required
             />
           </div>
           <div className='mb-4'>
             <label
-              htmlFor='email'
+              htmlFor='capacity'
               className='block text-dark font-normal mb-2'
             >
-              Email
+              Capacity
             </label>
             <input
-              type='email'
-              id='email'
-              name='email'
+              type='number'
+              id='capacity'
+              name='capacity'
               className='border rounded w-full py-2 px-3'
               required
             />
           </div>
           <div className='mb-4'>
             <label
-              htmlFor='email'
+              htmlFor='price_per_hour'
               className='block text-dark font-normal mb-2'
             >
-              Email
+              Price Per Hour
             </label>
             <input
-              type='email'
-              id='email'
-              name='email'
+              type='number'
+              id='price_per_hour'
+              name='price_per_hour'
               className='border rounded w-full py-2 px-3'
               required
             />
           </div>
           <div className='mb-4'>
             <label
-              htmlFor='email'
+              htmlFor='address'
               className='block text-dark font-normal mb-2'
             >
-              Email
+              Address
             </label>
             <input
-              type='email'
-              id='email'
-              name='email'
+              type='text'
+              id='address'
+              name='address'
               className='border rounded w-full py-2 px-3'
               required
             />
           </div>
           <div className='mb-4'>
             <label
-              htmlFor='email'
+              htmlFor='location'
               className='block text-dark font-normal mb-2'
             >
-              Email
+              Location
             </label>
             <input
-              type='email'
-              id='email'
-              name='email'
+              type='text'
+              id='location'
+              name='location'
               className='border rounded w-full py-2 px-3'
               required
             />
           </div>
           <div className='mb-4'>
             <label
-              htmlFor='email'
+              htmlFor='availability'
               className='block text-dark font-normal mb-2'
             >
-              Email
+              Availability
             </label>
             <input
-              type='email'
-              id='email'
-              name='email'
+              type='text'
+              id='availability'
+              name='availability'
               className='border rounded w-full py-2 px-3'
               required
             />
           </div>
           <div className='mb-4'>
             <label
-              htmlFor='email'
+              htmlFor='amenities'
               className='block text-dark font-normal mb-2'
             >
-              Email
+              Amenities
             </label>
             <input
-              type='email'
-              id='email'
-              name='email'
+              type='text'
+              id='amenities'
+              name='amenities'
               className='border rounded w-full py-2 px-3'
               required
             />
           </div>
           <div className='mb-4'>
             <label
-              htmlFor='email'
+              htmlFor='image'
               className='block text-dark font-normal mb-2'
             >
-              Email
+              Image
             </label>
             <input
-              type='email'
-              id='email'
-              name='email'
+              type='file'
+              id='image'
+              name='image'
               className='border rounded w-full py-2 px-3'
-              required
-            />
-          </div>
-          <div className='mb-4'>
-            <label
-              htmlFor='email'
-              className='block text-dark font-normal mb-2'
-            >
-              Email
-            </label>
-            <input
-              type='email'
-              id='email'
-              name='email'
-              className='border rounded w-full py-2 px-3'
-              required
             />
           </div>
         </form>

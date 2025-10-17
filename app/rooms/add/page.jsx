@@ -154,6 +154,14 @@ const AddRoomPage = () => {
               className='border rounded w-full py-2 px-3'
             />
           </div>
+          <div className='flex flex-col gap-5'>
+            <button
+              type='submit'
+              className='bg-primary-light text-dark hover:text-light px-4 py-2 rounded hover:bg-primary uppercase font-medium btn-hover'
+            >
+              Save
+            </button>
+          </div>
         </form>
       </div>
     </>

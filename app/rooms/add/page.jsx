@@ -9,7 +9,13 @@ const AddRoomPage = () => {
   const [state, formAction] = useFormState(createRoom, {})
   const router = useRouter()
 
-  useEffect(() => {}, [])
+  useEffect(() => {
+    if (state.error) toast.error(state.error)
+    if (state.success) {
+      toast.success('Room created successfully.')
+      router.push('/')
+    }
+  }, [])
 
   return ( 
     <>

@@ -15,6 +15,17 @@ async function createRoom(previousState, formData) {
         error: 'You must be logged in to create a room'
       }
     }
+
+    const newRoom = await databases.createDocument(
+      process.env.NEXT_PUBLIC_APPWRITE_DATABASE,
+      process.env.NEXT_PUBLIC_APPWRITE_COLLECTION_ROOMS,
+      ID.unique(),
+      {
+        user_id: user.id,
+        name: formData.get('name'),
+      }
+    )
+
   } catch (error) {
     
   }

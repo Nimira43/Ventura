@@ -1,3 +1,5 @@
+'use client'
+
 import { useEffect } from 'react'
 import { useFormState } from 'react-dom'
 import { useRouter } from 'next/navigation'
@@ -13,15 +15,16 @@ const AddRoomPage = () => {
     if (state.error) toast.error(state.error)
     if (state.success) {
       toast.success('Room created successfully.')
+      
       router.push('/')
     }
-  }, [])
+  }, [state])
 
   return ( 
     <>
       <Heading title='Add Room' />
       <div className='bg-light shadow-lg rounded-lg p-6 w-full'>
-        <form>
+        <form action={formAction}>
           <div className='mb-4'>
             <label
               htmlFor='name'

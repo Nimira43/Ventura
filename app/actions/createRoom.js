@@ -46,7 +46,6 @@ async function createRoom(previousState, formData) {
       error: errorMessage
     }
   }
-
 }
 
 export default createRoom

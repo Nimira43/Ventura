@@ -6,6 +6,11 @@ import Heading from '@/components/Heading'
 import createRoom from '@/app/actions/createRoom'
 
 const AddRoomPage = () => {
+  const [state, formAction] = useFormState(createRoom, {})
+  const router = useRouter()
+
+  useEffect(() => {}, [])
+
   return ( 
     <>
       <Heading title='Add Room' />

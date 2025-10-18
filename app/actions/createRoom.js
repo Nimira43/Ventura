@@ -40,7 +40,11 @@ async function createRoom(previousState, formData) {
       success: true
     }
   } catch (error) {
-    
+    console.log(error)
+    const errorMessage = error.response.message || 'An unexpected error has occured.'
+    return {
+      error: errorMessage
+    }
   }
 
 }

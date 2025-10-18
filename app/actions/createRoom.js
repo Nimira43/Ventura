@@ -23,6 +23,10 @@ async function createRoom(previousState, formData) {
       {
         user_id: user.id,
         name: formData.get('name'),
+        description: formData.get('description'),
+        sqft: formData.get('sqft'),
+        capacity: formData.get('capacity'),
+        location: formData.get('location'),
       }
     )
 

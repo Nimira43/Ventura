@@ -5,6 +5,9 @@ const RoomCard = ({ room }) => {
   const bucketId = process.env.NEXT_PUBLIC_APPWRITE_STORAGE_BUCKET_ROOMS
   const projectId = process.env.NEXT_PUBLIC_APPWRITE_PROJECT
 
+  const imageUrl = `https://cloud.appwrite.io/v1/storage/buckets/${bucketId}/files/${room.image}/view?project=${projectId}`
+  
+
   return ( 
     <div
       className='bg-light shadow-md rounded-lg p-4 mt-4 flex flex-col sm:flex-row justify-between items-start sm:items-center'

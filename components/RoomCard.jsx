@@ -2,6 +2,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const RoomCard = ({ room }) => {
+  const bucketId = process.env.NEXT_PUBLIC_APPWRITE_STORAGE_BUCKET_ROOMS
+  
+
   return ( 
     <div
       className='bg-light shadow-md rounded-lg p-4 mt-4 flex flex-col sm:flex-row justify-between items-start sm:items-center'

@@ -19,7 +19,14 @@ async function createRoom(previousState, formData) {
     let imageID
     const image = formData.get('image')
 
-    
+    if (image && image.size > 0 && image.name !== 'undefined') {
+      try {
+        
+      } catch (error) {
+        
+      }
+    }
+
 
     const newRoom = await databases.createDocument(
       process.env.NEXT_PUBLIC_APPWRITE_DATABASE,

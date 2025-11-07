@@ -6,7 +6,7 @@ import { ID } from 'node-appwrite'
 import { revalidatePath } from 'next/cache'
 
 async function createRoom(previousState, formData) {
-  const { databases } = await createAdminClient()
+  const { databases, storage } = await createAdminClient()
   try {
     const { user } = await checkAuth()
 
@@ -21,7 +21,7 @@ async function createRoom(previousState, formData) {
 
     if (image && image.size > 0 && image.name !== 'undefined') {
       try {
-        
+        const response = await storage.createFile('rooms', ID.unique(), image)
       } catch (error) {
         
       }

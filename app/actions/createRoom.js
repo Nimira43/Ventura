@@ -22,6 +22,7 @@ async function createRoom(previousState, formData) {
     if (image && image.size > 0 && image.name !== 'undefined') {
       try {
         const response = await storage.createFile('rooms', ID.unique(), image)
+        imageID = response.$id
       } catch (error) {
         
       }

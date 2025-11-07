@@ -16,6 +16,8 @@ async function createRoom(previousState, formData) {
       }
     }
 
+    let imageID
+
     const newRoom = await databases.createDocument(
       process.env.NEXT_PUBLIC_APPWRITE_DATABASE,
       process.env.NEXT_PUBLIC_APPWRITE_COLLECTION_ROOMS,

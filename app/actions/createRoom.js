@@ -49,6 +49,7 @@ async function createRoom(previousState, formData) {
         availability: formData.get('availability'),
         price_per_hour: formData.get('price_per_hour'),
         amenities: formData.get('amenities'),
+        image: imageID
       }
     )
 

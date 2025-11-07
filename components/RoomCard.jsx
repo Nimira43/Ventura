@@ -14,7 +14,7 @@ const RoomCard = ({ room }) => {
     >
       <div className='flex flex-col sm:flex-row sm:space-x-4'>
         <Image
-          src={`/images/rooms/${room.image}`}
+          src={imageSrc}
           width={400}
           height={100}
           alt={room.name}

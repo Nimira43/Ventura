@@ -8,7 +8,7 @@ const BookingForm = () => {
             <div>
               <label
                 htmlFor='check_in_date'
-                className='block text-sm font-medium text-dark'
+                className='form-label'
               >
                 Check-In Date
               </label>
@@ -16,14 +16,14 @@ const BookingForm = () => {
                 type='date'
                 id='check_in_date'
                 name='check_in_date'
-                className='mt-1 block w-full px-3 py-2 border border-grey-dark rounded-md shadow-sm focus:border-dark sm:text-sm'
+                className='form-input'
                 required
               />
             </div>
             <div>
               <label
                 htmlFor='check_in_time'
-                className='block text-sm font-medium text-dark'
+                className='form-label'
               >
                 Check-In Time
               </label>
@@ -31,14 +31,14 @@ const BookingForm = () => {
                 type='time'
                 id='check_in_time'
                 name='check_in_time'
-                className='mt-1 block w-full px-3 py-2 border border-grey-dark rounded-md shadow-sm focus:border-dark sm:text-sm'
+                className='form-input'
                 required
               />
             </div>
             <div>
               <label
                 htmlFor='check_out_date'
-                className='block text-sm font-medium text-dark'
+                className='form-label'
               >
                 Check-Out Date
               </label>
@@ -46,14 +46,14 @@ const BookingForm = () => {
                 type='date'
                 id='check_out_date'
                 name='check_out_date'
-                className='mt-1 block w-full px-3 py-2 border border-grey-dark rounded-md shadow-sm focus:border-dark sm:text-sm'
+                className='form-input'
                 required
               />
             </div>
             <div>
               <label
                 htmlFor='check_out_time'
-                className='block text-sm font-medium text-dark'
+                className='form-label'
               >
                 Check-Out Time
               </label>
@@ -61,7 +61,7 @@ const BookingForm = () => {
                 type='time'
                 id='check_out_time'
                 name='check_out_time'
-                className='mt-1 block w-full px-3 py-2 border border-grey-dark rounded-md shadow-sm focus:border-dark sm:text-sm'
+                className='form-input'
                 required
               />
             </div>

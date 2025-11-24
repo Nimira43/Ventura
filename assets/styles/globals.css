@@ -36,3 +36,11 @@ body {
 .header-link {
   @apply rounded-md px-3 py-2 text-base text-dark hover:bg-primary hover:text-light uppercase font-medium btn-hover
 }
+
+.form-label {
+  @apply block text-sm font-medium text-dark;
+}
+
+.form-input {
+  @apply mt-1 block w-full px-3 py-2 border border-grey-dark rounded-md shadow-sm focus:border-dark sm:text-sm;
+}

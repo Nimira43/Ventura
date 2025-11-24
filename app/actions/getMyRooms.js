@@ -20,12 +20,12 @@ async function getMyRooms() {
 
     const { documents: rooms } = await databases.listDocuments(
       process.env.NEXT_PUBLIC_APPWRITE_DATABASE,
-      process.env.NEXT_PUBLIC_APPWRITE_COLLECTION_ROOMS
+      process.env.NEXT_PUBLIC_APPWRITE_COLLECTION_ROOMS,
+      [Query.equal('user_id', userId)]
     )
-    revalidatePath('/', 'layout')
     return rooms 
   } catch (error) {
-    console.log('Failed to get rooms', error)
+    console.log('Failed to get user rooms', error)
     redirect('/error')
   }
 }

@@ -95,7 +95,7 @@ const RegisterPage= () => {
           <div className='flex flex-col gap-5'>
             <button
               type='submit'
-              className='btn-colours px-4 py-2 rounded '
+              className='main-btn'
             >
               Register
             </button>

@@ -28,7 +28,7 @@ const AddRoomPage = () => {
           <div className='mb-4'>
             <label
               htmlFor='name'
-              className='block text-dark font-normal mb-2'
+              className='block text-dark font-medium mb-2'
             >
               Room Name
             </label>
@@ -43,7 +43,7 @@ const AddRoomPage = () => {
           <div className='mb-4'>
             <label
               htmlFor='description'
-              className='block text-dark font-normal mb-2'
+              className='block text-dark font-medium mb-2'
             >
               Description
             </label>
@@ -57,7 +57,7 @@ const AddRoomPage = () => {
           <div className='mb-4'>
             <label
               htmlFor='sqft'
-              className='block text-dark font-normal mb-2'
+              className='block text-dark font-medium mb-2'
             >
               Square Feet
             </label>
@@ -72,7 +72,7 @@ const AddRoomPage = () => {
           <div className='mb-4'>
             <label
               htmlFor='capacity'
-              className='block text-dark font-normal mb-2'
+              className='block text-dark font-medium mb-2'
             >
               Capacity
             </label>
@@ -87,7 +87,7 @@ const AddRoomPage = () => {
           <div className='mb-4'>
             <label
               htmlFor='price_per_hour'
-              className='block text-dark font-normal mb-2'
+              className='block text-dark font-medium mb-2'
             >
               Price Per Hour
             </label>
@@ -102,7 +102,7 @@ const AddRoomPage = () => {
           <div className='mb-4'>
             <label
               htmlFor='address'
-              className='block text-dark font-normal mb-2'
+              className='block text-dark font-medium mb-2'
             >
               Address
             </label>
@@ -117,7 +117,7 @@ const AddRoomPage = () => {
           <div className='mb-4'>
             <label
               htmlFor='location'
-              className='block text-dark font-normal mb-2'
+              className='block text-dark font-medium mb-2'
             >
               Location
             </label>
@@ -132,7 +132,7 @@ const AddRoomPage = () => {
           <div className='mb-4'>
             <label
               htmlFor='availability'
-              className='block text-dark font-normal mb-2'
+              className='block text-dark font-medium mb-2'
             >
               Availability
             </label>
@@ -147,7 +147,7 @@ const AddRoomPage = () => {
           <div className='mb-4'>
             <label
               htmlFor='amenities'
-              className='block text-dark font-normal mb-2'
+              className='block text-dark font-medium mb-2'
             >
               Amenities
             </label>
@@ -162,7 +162,7 @@ const AddRoomPage = () => {
           <div className='mb-4'>
             <label
               htmlFor='image'
-              className='block text-dark font-normal mb-2'
+              className='block text-dark font-medium mb-2'
             >
               Image
             </label>
@@ -176,7 +176,7 @@ const AddRoomPage = () => {
           <div className='flex flex-col gap-5'>
             <button
               type='submit'
-              className='bg-primary-light text-dark hover:text-light px-4 py-2 rounded hover:bg-primary uppercase font-medium btn-hover'
+              className='main-btn'
             >
               Save
             </button>

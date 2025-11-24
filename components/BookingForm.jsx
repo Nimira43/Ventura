@@ -69,7 +69,7 @@ const BookingForm = () => {
           <div className='mt-6'>
             <button
               type='submit'
-              className='w-full flex justify-center bg-primary-light text-dark hover:text-light px-4 py-2 rounded hover:bg-primary uppercase font-medium btn-hover'
+              className='w-full main-btn'
             >
               Book Room
             </button>

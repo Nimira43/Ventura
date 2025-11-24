@@ -1,10 +1,12 @@
 'use server'
 
-import { createAdminClient } from '@/config/appwrite'
+import { createSessionClient } from '@/config/appwrite'
 import { revalidatePath } from 'next/cache'
+import { cookies } from 'next/headers'
+import { Query } from 'node-appwrite'
 import { redirect } from 'next/navigation'
 
-async function getAllRooms() {
+async function getMyRooms() {
   try {
     const { databases } = await createAdminClient()
     const { documents: rooms } = await databases.listDocuments(
@@ -19,4 +21,4 @@ async function getAllRooms() {
   }
 }
 
-export default getAllRooms
+export default getMyRooms

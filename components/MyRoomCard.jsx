@@ -10,13 +10,13 @@ const MyRoomCard = ({ room }) => {
       <div className='flex flex-col sm:flex-row w-full sm:w-auto sm:space-x-2 mt-2 sm:mt-0'>
         <Link
           href={`/rooms/${room.$id}`}
-          className='centre btn-colours px-4 py-2 rounded mb-2 sm:mb-0 w-full sm:w-auto text-center font-medium btn-hover uppercase' 
+          className='centre btn-colours px-4 py-2 rounded mb-2 sm:mb-0 w-full sm:w-auto text-center' 
         >
           <HiOutlineEye className='mr-2 text-lg' /> View
         </Link>
         <button
           // type='submit'
-          className='centre btn-colours px-4 py-2 rounded mb-2 sm:mb-0 w-full sm:w-auto text-center font-medium btn-hover uppercase'
+          className='centre btn-colours px-4 py-2 rounded mb-2 sm:mb-0 w-full sm:w-auto text-center'
         >
           <HiOutlineTrash className='mr-2 text-lg' /> Delete
         </button>

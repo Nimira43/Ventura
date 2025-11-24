@@ -30,5 +30,5 @@ body {
 }
 
 .btn-colours {
-  @apply bg-primary-light hover:bg-primary text-dark hover:text-light;
+  @apply bg-primary-light hover:bg-primary text-dark hover:text-light font-medium btn-hover uppercase;
 }

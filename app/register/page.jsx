@@ -21,7 +21,7 @@ const RegisterPage= () => {
 
 
   return ( 
-    <div className='flex items-center justify-center'>
+    <div className='centre'>
       <div className='bg-light shadow-lg rounded-lg p-6 w-full max-w-sm mt-20'>
         <form action={formAction}>
           <h2 className='text-2xl font-medium text-center text-dark mb-6 uppercase'>
@@ -31,7 +31,7 @@ const RegisterPage= () => {
           <div className='mb-4'>
             <label 
               htmlFor='name' 
-              className='block text-dark font-normal mb-2'
+              className='block text-dark font-medium mb-2'
             >
               Name
             </label>
@@ -47,7 +47,7 @@ const RegisterPage= () => {
           <div className='mb-4'>
             <label 
               htmlFor='email' 
-              className='block text-dark font-normal mb-2'
+              className='block text-dark font-medium mb-2'
             >
               Email
             </label>
@@ -63,7 +63,7 @@ const RegisterPage= () => {
           <div className='mb-4'>
             <label 
               htmlFor='password' 
-              className='block text-dark font-normal mb-2'
+              className='block text-dark font-medium mb-2'
             >
               Password
             </label>
@@ -79,7 +79,7 @@ const RegisterPage= () => {
           <div className='mb-6'>
             <label
               htmlFor='confirm-password'
-              className='block text-dark font-normal mb-2'
+              className='block text-dark font-medium mb-2'
             >
               Confirm Password
             </label            >
@@ -95,7 +95,7 @@ const RegisterPage= () => {
           <div className='flex flex-col gap-5'>
             <button
               type='submit'
-              className='bg-primary-light text-dark hover:text-light px-4 py-2 rounded hover:bg-primary uppercase font-medium btn-hover'
+              className='btn-colours px-4 py-2 rounded '
             >
               Register
             </button>

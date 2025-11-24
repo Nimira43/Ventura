@@ -8,6 +8,10 @@ import { redirect } from 'next/navigation'
 async function getMyRooms() {
   const sessionCookie = cookies().get('appwrite-session')
 
+  if (!sessionCookie) {
+    redirect('/login')
+  }
+
   try {
     const { databases } = await createAdminClient()
     const { documents: rooms } = await databases.listDocuments(

@@ -20,3 +20,15 @@
 body {
   background-color: #fffffe;
 }
+
+.centre {
+  @apply flex justify-center items-center;
+}
+
+.just-between {
+  @apply flex justify-between items-center;
+}
+
+.btn-colours {
+  @apply bg-primary-light hover:bg-primary text-dark hover:text-light;
+}

@@ -33,7 +33,7 @@ const LoginPage= () => {
           <div className='mb-4'>
             <label
               htmlFor='email'
-              className='block text-dark font-medium mb-2'
+              className='form-label mb-2'
             >
               Email
             </label>
@@ -41,7 +41,7 @@ const LoginPage= () => {
               type='email'
               id='email'
               name='email'
-              className='border rounded w-full py-2 px-3'
+              className='form-input'
               required
             />
           </div>
@@ -49,7 +49,7 @@ const LoginPage= () => {
           <div className='mb-6'>
             <label
               htmlFor='password'
-              className='block text-dark font-medium mb-2'
+              className='form-label mb-2'
             >
               Password
             </label>
@@ -57,7 +57,7 @@ const LoginPage= () => {
               type='password'
               id='password'
               name='password'
-              className='border rounded w-full py-2 px-3'
+              className='form-input'
               required
             />
           </div>

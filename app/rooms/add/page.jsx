@@ -28,7 +28,7 @@ const AddRoomPage = () => {
           <div className='mb-4'>
             <label
               htmlFor='name'
-              className='block text-dark font-medium mb-2'
+              className='form-label mb-2'
             >
               Room Name
             </label>
@@ -36,28 +36,28 @@ const AddRoomPage = () => {
               type='text'
               id='name'
               name='name'
-              className='border rounded w-full py-2 px-3'
+              className='form-input'
               required
             />
           </div>
           <div className='mb-4'>
             <label
               htmlFor='description'
-              className='block text-dark font-medium mb-2'
+              className='form-label mb-2'
             >
               Description
             </label>
             <textarea
               id='description'
               name='description'
-              className='border rounded w-full h-24 py-2 px-3'
+              className='form-input h-24'
               required
             ></textarea>
           </div>
           <div className='mb-4'>
             <label
               htmlFor='sqft'
-              className='block text-dark font-medium mb-2'
+              className='form-label mb-2'
             >
               Square Feet
             </label>
@@ -65,14 +65,14 @@ const AddRoomPage = () => {
               type='number'
               id='sqft'
               name='sqft'
-              className='border rounded w-full py-2 px-3'
+              className='form-input'
               required
             />
           </div>
           <div className='mb-4'>
             <label
               htmlFor='capacity'
-              className='block text-dark font-medium mb-2'
+              className='form-label mb-2'
             >
               Capacity
             </label>
@@ -80,14 +80,14 @@ const AddRoomPage = () => {
               type='number'
               id='capacity'
               name='capacity'
-              className='border rounded w-full py-2 px-3'
+              className='form-input'
               required
             />
           </div>
           <div className='mb-4'>
             <label
               htmlFor='price_per_hour'
-              className='block text-dark font-medium mb-2'
+              className='form-label mb-2'
             >
               Price Per Hour
             </label>
@@ -95,14 +95,14 @@ const AddRoomPage = () => {
               type='number'
               id='price_per_hour'
               name='price_per_hour'
-              className='border rounded w-full py-2 px-3'
+              className='form-input'
               required
             />
           </div>
           <div className='mb-4'>
             <label
               htmlFor='address'
-              className='block text-dark font-medium mb-2'
+              className='form-label mb-2'
             >
               Address
             </label>
@@ -110,14 +110,14 @@ const AddRoomPage = () => {
               type='text'
               id='address'
               name='address'
-              className='border rounded w-full py-2 px-3'
+              className='form-input'
               required
             />
           </div>
           <div className='mb-4'>
             <label
               htmlFor='location'
-              className='block text-dark font-medium mb-2'
+              className='form-label mb-2'
             >
               Location
             </label>
@@ -125,14 +125,14 @@ const AddRoomPage = () => {
               type='text'
               id='location'
               name='location'
-              className='border rounded w-full py-2 px-3'
+              className='form-input'
               required
             />
           </div>
           <div className='mb-4'>
             <label
               htmlFor='availability'
-              className='block text-dark font-medium mb-2'
+              className='form-label mb-2'
             >
               Availability
             </label>
@@ -140,14 +140,14 @@ const AddRoomPage = () => {
               type='text'
               id='availability'
               name='availability'
-              className='border rounded w-full py-2 px-3'
+              className='form-input'
               required
             />
           </div>
           <div className='mb-4'>
             <label
               htmlFor='amenities'
-              className='block text-dark font-medium mb-2'
+              className='form-label mb-2'
             >
               Amenities
             </label>
@@ -155,14 +155,14 @@ const AddRoomPage = () => {
               type='text'
               id='amenities'
               name='amenities'
-              className='border rounded w-full py-2 px-3'
+              className='form-input'
               required
             />
           </div>
           <div className='mb-4'>
             <label
               htmlFor='image'
-              className='block text-dark font-medium mb-2'
+              className='form-label mb-2'
             >
               Image
             </label>
@@ -170,7 +170,7 @@ const AddRoomPage = () => {
               type='file'
               id='image'
               name='image'
-              className='border rounded w-full py-2 px-3'
+              className='form-input'
             />
           </div>
           <div className='flex flex-col gap-5'>

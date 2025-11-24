@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <header className='bg-primary-light'>
       <nav className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>         
-        <div className='flex h-16 items-center justify-between'>
+        <div className='just-between h-16'>
           <div className='flex items-center'>
             <Link href='/'>
               <h1 className='text-3xl font-medium logo'>Ventura</h1>
@@ -36,7 +36,7 @@ const Header = () => {
               <div className='ml-10 flex items-baseline space-x-4'>
                 <Link
                   href='/'
-                  className='rounded-md px-3 py-2 text-sm text-dark hover:bg-primary hover:text-light uppercase font-medium btn-hover'
+                  className='header-link'
                 >
                   Rooms
                 </Link>
@@ -45,13 +45,13 @@ const Header = () => {
                   <>
                     <Link
                       href='/bookings'
-                      className='rounded-md px-3 py-2 text-sm text-dark hover:bg-primary hover:text-light uppercase font-medium btn-hover'
+                      className='header-link'
                     >
                       Bookings
                     </Link>
                     <Link
                       href='/rooms/add'
-                      className='rounded-md px-3 py-2 text-sm text-dark hover:bg-primary hover:text-light uppercase font-medium btn-hover'
+                      className='header-link'
                     >
                       Add Room
                     </Link>
@@ -68,13 +68,13 @@ const Header = () => {
                 <>
                   <Link
                     href='/login'
-                    className='mr-3 text-dark hover:text-primary uppercase font-medium btn-hover'
+                    className='mr-3 header-link'
                   >
                     <PiSignInLight className='inline'/> Login
                   </Link>
                   <Link
                     href='/register'
-                    className='mr-3 text-dark hover:text-primary uppercase font-medium btn-hover'
+                    className='mr-3 header-link'
                   >
                     <AiOutlineUser className='inline'/> Register
                   </Link>
@@ -85,13 +85,13 @@ const Header = () => {
                 <>
                   <Link 
                     href='/rooms/my'
-                    className='mr-3 text-dark hover:text-primary uppercase font-medium btn-hover'
+                    className='mr-3 header-link'
                   >
                     <LiaBuilding className='inline'/> My Rooms
                   </Link>
                   <button
                     onClick={handleLogout}
-                    className='mx-3 text-dark hover:text-primary uppercase font-medium btn-hover'
+                    className='mx-3 header-link'
                   >
                     <PiSignOutLight className='inline'/> Sign Out
                   </button>
@@ -107,7 +107,7 @@ const Header = () => {
         <div className='space-y-1 px-2 pb-3 pt-2 sm:px-3'>
           <Link
             href='/'
-            className='block rounded-md px-3 py-2 text-base text-dark hover:bg-primary hover:text-light uppercase font-medium btn-hover'
+            className='block header-link'
           >
             Rooms
           </Link>
@@ -116,13 +116,13 @@ const Header = () => {
             <>
               <Link
                 href='/bookings'
-                className='block rounded-md px-3 py-2 text-base text-dark hover:bg-primary hover:text-light uppercase font-medium btn-hover'
+                className='block header-link'
               >
                 Bookings
               </Link>
               <Link
                 href='/rooms/add'
-                className='block rounded-md px-3 py-2 text-base text-dark hover:bg-primary hover:text-light uppercase font-medium btn-hover'
+                className='block header-link'
               >
                 Add Room
               </Link>  

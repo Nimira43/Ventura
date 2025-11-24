@@ -1,7 +1,6 @@
 'use server'
 
 import { createSessionClient } from '@/config/appwrite'
-import { revalidatePath } from 'next/cache'
 import { cookies } from 'next/headers'
 import { Query } from 'node-appwrite'
 import { redirect } from 'next/navigation'

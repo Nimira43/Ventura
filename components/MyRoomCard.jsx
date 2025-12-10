@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { HiOutlineEye,  HiOutlineTrash} from 'react-icons/hi'
+import { HiOutlineEye } from 'react-icons/hi'
 
 const MyRoomCard = ({ room }) => {
   return ( 

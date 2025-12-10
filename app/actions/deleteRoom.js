@@ -6,7 +6,7 @@ import { Query } from 'node-appwrite'
 import { redirect } from 'next/navigation'
 import { revalidatePath } from 'next/cache'
 
-async function deleteRooms() {
+async function deleteRoom(roomId) {
   const sessionCookie = cookies().get('appwrite-session')
 
   if (!sessionCookie) {
@@ -24,6 +24,9 @@ async function deleteRooms() {
       process.env.NEXT_PUBLIC_APPWRITE_COLLECTION_ROOMS,
       [Query.equal('user_id', userId)]
     )
+
+    const roomToDelete = rooms.find((room) => room.$id === roomId)
+
     return rooms 
   } catch (error) {
     console.log('Failed to get user rooms', error)
@@ -31,4 +34,4 @@ async function deleteRooms() {
   }
 }
 
-export default deleteRooms
+export default deleteRoom

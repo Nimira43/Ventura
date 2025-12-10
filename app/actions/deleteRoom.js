@@ -4,8 +4,9 @@ import { createSessionClient } from '@/config/appwrite'
 import { cookies } from 'next/headers'
 import { Query } from 'node-appwrite'
 import { redirect } from 'next/navigation'
+import { revalidatePath } from 'next/cache'
 
-async function getMyRooms() {
+async function deleteRooms() {
   const sessionCookie = cookies().get('appwrite-session')
 
   if (!sessionCookie) {
@@ -30,4 +31,4 @@ async function getMyRooms() {
   }
 }
 
-export default getMyRooms
+export default deleteRooms

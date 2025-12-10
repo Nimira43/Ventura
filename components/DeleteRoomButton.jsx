@@ -14,6 +14,7 @@ const DeleteRoomButton = ({ roomId }) => {
         toast.success('Room deleted successfully.')
       } catch (error) {
         console.log('Failed to delete room', error)
+        toast.error('Failed to delete room.')
       }
     }
   }

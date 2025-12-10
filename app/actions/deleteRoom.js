@@ -27,6 +27,14 @@ async function deleteRoom(roomId) {
 
     const roomToDelete = rooms.find((room) => room.$id === roomId)
 
+    if (roomToDelete) {
+      await databases.deleteDocument(
+        process.env.NEXT_PUBLIC_APPWRITE_DATABASE,
+        process.env.NEXT_PUBLIC_APPWRITE_COLLECTION_ROOMS,
+        roomToDelete.$id
+      )
+    }
+
     return rooms 
   } catch (error) {
     console.log('Failed to get user rooms', error)

@@ -10,7 +10,7 @@ const DeleteRoomButton = ({ roomId }) => {
 
     if (confirmed) {
       try {
-        
+        const response = await deleteRoom(roomId)
       } catch (error) {
         
       }

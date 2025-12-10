@@ -36,6 +36,10 @@ async function deleteRoom(roomId) {
 
       revalidatePath('/rooms/my', 'layout')
       revalidatePath('/', 'layout')
+
+      return {
+        success: true
+      }
     }
 
     return rooms 

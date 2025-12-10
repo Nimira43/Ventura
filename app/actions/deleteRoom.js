@@ -40,9 +40,11 @@ async function deleteRoom(roomId) {
       return {
         success: true
       }
+    } else {
+      return {
+        error: 'Room not found.'
+      }
     }
-
-    return rooms 
   } catch (error) {
     console.log('Failed to get user rooms', error)
     redirect('/error')

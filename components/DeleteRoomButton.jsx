@@ -11,8 +11,9 @@ const DeleteRoomButton = ({ roomId }) => {
     if (confirmed) {
       try {
         const response = await deleteRoom(roomId)
+        toast.success('Room deleted successfully.')
       } catch (error) {
-        
+        console.log('Failed to delete room', error)
       }
     }
   }

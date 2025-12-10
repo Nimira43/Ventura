@@ -5,6 +5,8 @@ import { HiOutlineTrash } from 'react-icons/hi'
 import deleteRoom from '@/app/actions/deleteRoom'
 
 const DeleteRoomButton = () => {
+  const handleDelete = async () => {}
+
   return ( 
     <button
       onClick={handleDelete}

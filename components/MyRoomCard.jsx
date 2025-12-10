@@ -14,11 +14,7 @@ const MyRoomCard = ({ room }) => {
         >
           <HiOutlineEye className='mr-2 text-lg' /> View
         </Link>
-        <button
-          className='centre main-btn mb-2 sm:mb-0 w-full sm:w-auto text-center'
-        >
-          <HiOutlineTrash className='mr-2 text-lg' /> Delete
-        </button>
+        
       </div>
     </div>
   )

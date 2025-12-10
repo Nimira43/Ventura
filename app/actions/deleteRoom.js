@@ -46,8 +46,10 @@ async function deleteRoom(roomId) {
       }
     }
   } catch (error) {
-    console.log('Failed to get user rooms', error)
-    redirect('/error')
+    console.log('Failed to delete room', error)
+    return {
+      error: 'Failed to delete room.'
+    }
   }
 }
 

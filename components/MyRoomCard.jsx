@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { HiOutlineEye } from 'react-icons/hi'
+import DeleteRoomButton from './DeleteRoomButton'
 
 const MyRoomCard = ({ room }) => {
   return ( 
@@ -14,7 +15,7 @@ const MyRoomCard = ({ room }) => {
         >
           <HiOutlineEye className='mr-2 text-lg' /> View
         </Link>
-        
+        <DeleteRoomButton roomId={ room.$id } />
       </div>
     </div>
   )

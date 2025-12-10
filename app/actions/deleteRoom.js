@@ -33,6 +33,9 @@ async function deleteRoom(roomId) {
         process.env.NEXT_PUBLIC_APPWRITE_COLLECTION_ROOMS,
         roomToDelete.$id
       )
+
+      revalidatePath('/rooms/my', 'layout')
+      revalidatePath('/', 'layout')
     }
 
     return rooms 

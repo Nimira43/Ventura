@@ -8,7 +8,13 @@ const DeleteRoomButton = ({ roomId }) => {
   const handleDelete = async () => {
     const confirmed = window.confirm('Are you sure you wish to delete this room?')
 
-    if (confirmed) {}
+    if (confirmed) {
+      try {
+        
+      } catch (error) {
+        
+      }
+    }
   }
 
   return ( 

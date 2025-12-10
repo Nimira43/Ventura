@@ -5,7 +5,9 @@ import { HiOutlineTrash } from 'react-icons/hi'
 import deleteRoom from '@/app/actions/deleteRoom'
 
 const DeleteRoomButton = () => {
-  const handleDelete = async () => {}
+  const handleDelete = async () => {
+    const confirmed = window.confirm('Are you sure you wish to delete this room?')
+  }
 
   return ( 
     <button

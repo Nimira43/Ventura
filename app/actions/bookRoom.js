@@ -23,6 +23,8 @@ async function bookRoom(previousState, formData) {
     const checkOutDate = formData.get('check_out_date')
     const checkOutTime = formData.get('check_out_time')
 
+    const checkInDateTime = `${checkInDate}T${checkInTime}`
+    const checkOutDateTime = `${checkOutDate}T${checkOutTime}`
 
     if (!user) {
       return {

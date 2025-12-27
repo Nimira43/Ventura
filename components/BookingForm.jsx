@@ -7,6 +7,8 @@ import { toast } from 'react-toastify'
 import bookRoom from '@/app/actions/bookRoom'
 
 const BookingForm = ({ room }) => {
+  const [state, formAction] = useFormState()
+
   return ( 
     <>
       <div className='mt-6'>

@@ -1,5 +1,8 @@
 'use client'
 
+import Link from 'next/link'
+
+
 const BookingForm = ({ room }) => {
   return ( 
     <>

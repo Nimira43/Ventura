@@ -7,7 +7,8 @@ import { toast } from 'react-toastify'
 import bookRoom from '@/app/actions/bookRoom'
 
 const BookingForm = ({ room }) => {
-  const [state, formAction] = useFormState()
+  const [state, formAction] = useFormState(bookRoom, {})
+  const router = useRouter()
 
   return ( 
     <>

@@ -10,6 +10,11 @@ const BookingForm = ({ room }) => {
   const [state, formAction] = useFormState(bookRoom, {})
   const router = useRouter()
 
+  useEffect(() => {
+    if (state.error) toast.error(state.error)
+    
+  }, [state])
+
   return ( 
     <>
       <div className='mt-6'>

@@ -6,7 +6,7 @@ import { ID } from 'node-appwrite'
 import { redirect } from 'next/navigation'
 import checkAuth from './checkAuth'
 
-async function bookRoom() {
+async function bookRoom(previousState, formData) {
   const sessionCookie = cookies().get('appwrite-session')
 
   if (!sessionCookie) {

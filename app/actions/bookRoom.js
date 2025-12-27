@@ -30,6 +30,7 @@ async function bookRoom(previousState, formData) {
       check_in: checkInDateTime,
       check_out: checkOutDateTime,
       user_id: user.id,
+      room_id: formData.get('room_id')
     }
 
     if (!user) {

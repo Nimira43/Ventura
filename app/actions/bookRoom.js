@@ -18,6 +18,12 @@ async function bookRoom(previousState, formData) {
 
     const { user } = checkAuth()
 
+    const checkInDate = formData.get('check_in_date')
+    const checkInTime = formData.get('check_in_time')
+    const checkOutDate = formData.get('check_out_date')
+    const checkOutTime = formData.get('check_out_time')
+
+
     if (!user) {
       return {
         error: 'You must be logged in to book a room.'

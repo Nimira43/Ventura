@@ -42,6 +42,7 @@ async function bookRoom(previousState, formData) {
       process.env.NEXT_PUBLIC_APPWRITE_DATABASE,
       process.env.NEXT_PUBLIC_APPWRITE_COLLECTION_ROOMS,
       ID.unique(),
+      bookingData
     )
 
   } catch (error) {

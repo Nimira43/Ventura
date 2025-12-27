@@ -6,7 +6,7 @@ import { ID } from 'node-appwrite'
 import { redirect } from 'next/navigation'
 import checkAuth from './checkAuth'
 
-async function getMyRooms() {
+async function bookRoom() {
   const sessionCookie = cookies().get('appwrite-session')
 
   if (!sessionCookie) {
@@ -31,4 +31,4 @@ async function getMyRooms() {
   }
 }
 
-export default getMyRooms
+export default bookRoom

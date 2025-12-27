@@ -2,8 +2,9 @@
 
 import { createSessionClient } from '@/config/appwrite'
 import { cookies } from 'next/headers'
-import { Query } from 'node-appwrite'
+import { ID } from 'node-appwrite'
 import { redirect } from 'next/navigation'
+import checkAuth from './checkAuth'
 
 async function getMyRooms() {
   const sessionCookie = cookies().get('appwrite-session')

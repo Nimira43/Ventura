@@ -1,3 +1,5 @@
+'use client'
+
 const BookingForm = ({ room }) => {
   return ( 
     <>

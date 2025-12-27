@@ -48,6 +48,10 @@ async function bookRoom(previousState, formData) {
 
     revalidatePath('/bookings', 'layout')
 
+    return {
+      success: true,
+    }
+
   } catch (error) {
     console.log('Failed to get book room', error)
     return {

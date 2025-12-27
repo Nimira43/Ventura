@@ -5,6 +5,7 @@ import { cookies } from 'next/headers'
 import { ID } from 'node-appwrite'
 import { redirect } from 'next/navigation'
 import checkAuth from './checkAuth'
+import { revalidatePath } from 'next/cache'
 
 async function bookRoom(previousState, formData) {
   const sessionCookie = cookies().get('appwrite-session')
@@ -44,6 +45,8 @@ async function bookRoom(previousState, formData) {
       ID.unique(),
       bookingData
     )
+
+    revalidatePath('/bookings', 'layout')
 
   } catch (error) {
     console.log('Failed to get book room', error)

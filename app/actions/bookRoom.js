@@ -15,8 +15,13 @@ async function bookRoom(previousState, formData) {
 
   try {
     const { databases } = await createSessionClient(sessionCookie.value)
-
     const { user } = checkAuth()
+
+    if (!user) {
+      return {
+        error: 'You must be logged in to book a room.'
+      }
+    }
 
     const checkInDate = formData.get('check_in_date')
     const checkInTime = formData.get('check_in_time')
@@ -33,11 +38,11 @@ async function bookRoom(previousState, formData) {
       room_id: formData.get('room_id')
     }
 
-    if (!user) {
-      return {
-        error: 'You must be logged in to book a room.'
-      }
-    }
+    const newBooking = await databases.createDocument(
+      process.env.NEXT_PUBLIC_APPWRITE_DATABASE,
+      process.env.NEXT_PUBLIC_APPWRITE_COLLECTION_ROOMS,
+      ID.unique(),
+    )
 
   } catch (error) {
     console.log('Failed to get book room', error)

@@ -14,9 +14,9 @@ async function bookRoom(previousState, formData) {
   }
 
   try {
-    const { account, databases } = await createSessionClient(sessionCookie.value)
+    const { databases } = await createSessionClient(sessionCookie.value)
 
-    const user = await account.get()
+    const { user } = checkAuth()
     const userId = user.$id
 
     const { documents: rooms } = await databases.listDocuments(

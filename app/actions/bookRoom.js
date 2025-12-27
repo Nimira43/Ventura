@@ -17,7 +17,12 @@ async function bookRoom(previousState, formData) {
     const { databases } = await createSessionClient(sessionCookie.value)
 
     const { user } = checkAuth()
-    const userId = user.$id
+
+    if (!user) {
+      return {
+        error: 'You must be logged in to book a room.'
+      }
+    }
 
     const { documents: rooms } = await databases.listDocuments(
       process.env.NEXT_PUBLIC_APPWRITE_DATABASE,

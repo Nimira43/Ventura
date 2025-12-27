@@ -22,7 +22,10 @@ const BookingForm = ({ room }) => {
     <>
       <div className='mt-6'>
         <h2 className='text-lg font-medium uppercase'>Book this Room</h2>
-        <form className='mt-4'>
+        <form
+          action={formAction}
+          className='mt-4'
+        >
           <input
             type='hidden'
             name='room_id'

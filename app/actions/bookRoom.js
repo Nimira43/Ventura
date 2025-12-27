@@ -16,7 +16,7 @@ async function bookRoom(previousState, formData) {
 
   try {
     const { databases } = await createSessionClient(sessionCookie.value)
-    const { user } = checkAuth()
+    const { user } = await checkAuth()
 
     if (!user) {
       return {
@@ -41,7 +41,7 @@ async function bookRoom(previousState, formData) {
 
     const newBooking = await databases.createDocument(
       process.env.NEXT_PUBLIC_APPWRITE_DATABASE,
-      process.env.NEXT_PUBLIC_APPWRITE_COLLECTION_ROOMS,
+      process.env.NEXT_PUBLIC_APPWRITE_COLLECTION_BOOKINGS,
       ID.unique(),
       bookingData
     )

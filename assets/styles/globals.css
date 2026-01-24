@@ -33,6 +33,10 @@ body {
   @apply bg-primary-light hover:bg-primary text-dark hover:text-light font-medium btn-hover uppercase px-4 py-2 rounded;
 }
 
+.dark-btn {
+  @apply bg-dark hover:bg-primary text-light font-medium btn-hover uppercase px-4 py-2 rounded;
+}
+
 .header-link {
   @apply rounded-md px-3 py-2 text-base text-dark hover:bg-primary hover:text-light uppercase font-medium btn-hover
 }
